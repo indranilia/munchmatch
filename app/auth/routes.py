@@ -114,7 +114,7 @@ async def register():
                     f"Email sent to {newUserData['email']} for user verify their account")
 
                 # Sending verification email
-                await emailSender.sendEmail(newUserData['email'], 'Verify your account for Kanban Board',
+                await emailSender.sendEmail(newUserData['email'], 'Verify your account for Tinder For Food',
                                             'newUser', newUserData['name'],
                                             f"{request.url_root}auth/verify/{newUserData['uuid']}")
 
@@ -207,7 +207,7 @@ async def forgotPassword():
                     info_logger.info(
                         f"Forgot password message sent to email: {existingUser.email}")
                     # Sending verification email
-                    await emailSender.sendEmail(existingUser.email, 'Reset your Kanban Board password',
+                    await emailSender.sendEmail(existingUser.email, 'Reset your Tinder For Food password',
                                                 'forgotPassword', existingUser.name,
                                                 f"{request.url_root}auth/reset-password/{existingUser.uuid}")
 
