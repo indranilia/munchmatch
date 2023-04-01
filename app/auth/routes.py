@@ -115,7 +115,7 @@ async def register():
 
                 # Sending verification email
                 await emailSender.sendEmail(newUserData['email'], 'Verify your account for Kanban Board',
-                                            'newUser', newUserData['firstName'],
+                                            'newUser', newUserData['name'],
                                             f"{request.url_root}auth/verify/{newUserData['uuid']}")
 
                 info_logger.info(
@@ -208,7 +208,7 @@ async def forgotPassword():
                         f"Forgot password message sent to email: {existingUser.email}")
                     # Sending verification email
                     await emailSender.sendEmail(existingUser.email, 'Reset your Kanban Board password',
-                                                'forgotPassword', existingUser.firstName,
+                                                'forgotPassword', existingUser.name,
                                                 f"{request.url_root}auth/reset-password/{existingUser.uuid}")
 
                     return make_response({"message": f"Email sent to {existingUser.email}! Remember\

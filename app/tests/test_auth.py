@@ -46,13 +46,13 @@ class TestAuth(unittest.TestCase):
         """Clean up after the test"""
         pass
 
-    def register(self, firstName, lastName, email, password):
+    def register(self, name, gender, email, password):
         """
         Test helper function that sends a POST request to the '/auth/register' route.
 
         Args:
-            firstName (str): The first name of the user to register
-            lastName (str): The last name of the user to register
+            name (str): The name of the user to register
+            gender (int): The gender of the user to register
             email (str): The email address of the user to register
             password (str): The password of the user to register
 
@@ -61,7 +61,7 @@ class TestAuth(unittest.TestCase):
         """
         return self.app.post(
             '/auth/register',
-            data=json.dumps({"firstName": firstName, "lastName": lastName,
+            data=json.dumps({"name": name, "gender": gender,
                              "email": email, "password": password}),
             follow_redirects=True,
             headers={
@@ -131,7 +131,7 @@ class TestAuth(unittest.TestCase):
 
         # Check if registering works
         registerResponse = self.register(
-            'TestFirst', 'TestLast', 'test@test.com', '123456')
+            'TestName', 1, 'test@test.com', '123456')
         self.assertEqual(registerResponse.status_code, 201)
 
         # Getting user
@@ -140,7 +140,7 @@ class TestAuth(unittest.TestCase):
 
         # Check if registering doesn't work in case email is already registered
         registerResponse = self.register(
-            'TestFirst', 'TestLast', 'test@test.com', '123456')
+            'TestName', 1, 'test@test.com', '123456')
         self.assertEqual(registerResponse.status_code, 202)
 
         # Check if login doesn't work before verification

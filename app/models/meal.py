@@ -1,4 +1,5 @@
 from app.extensions import db
+from app.models.meal_type import meal_type
 
 
 class Meal(db.Model):
@@ -13,6 +14,7 @@ class Meal(db.Model):
         picture (str): The picture of the meal.
         user_id (int): The ID of the user who added the meal.
         types (Type): List of types associated with that meal.
+        reviews (Review): List of reviews associated with that meal.
 
     Methods:
         __repr__(): Returns a string representation of the Meal object.
@@ -23,7 +25,8 @@ class Meal(db.Model):
     price = db.Column(db.Float)
     picture = db.Column(db.Text)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-    types = db.relationship('Type', backref='post')
+    types = db.relationship('Type', secondary=meal_type, backref='posts')
+    reviews = db.relationship('Review', backref='post')
 
     def __repr__(self):
         """

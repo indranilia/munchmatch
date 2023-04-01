@@ -10,6 +10,7 @@ class Review(db.Model):
         uuid (str): A Universally Unique Identifier (UUID) for the review.
         rating (int): The review's rating.
         user_id (int): The ID of the user who added the review.
+        meal_id (int): The ID of the meal that the review is about.
 
     Methods:
         __repr__(): Returns a string representation of the Review object.
@@ -18,6 +19,7 @@ class Review(db.Model):
     uuid = db.Column(db.Text)
     rating = db.Column(db.Integer)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    meal_id = db.Column(db.Integer, db.ForeignKey('meal.id'))
 
     def __repr__(self):
         """

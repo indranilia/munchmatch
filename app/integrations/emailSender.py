@@ -11,7 +11,7 @@ import re
 load_dotenv()
 
 
-async def sendEmail(receiver_email, subject, type, firstName, link):
+async def sendEmail(receiver_email, subject, type, name, link):
     """
     Sends an email with HTML content to the specified receiver email address.
 
@@ -19,7 +19,7 @@ async def sendEmail(receiver_email, subject, type, firstName, link):
         receiver_email: A string representing the email address of the recipient.
         subject: A string representing the subject of the email message.
         type: A string representing the type of email template to use.
-        firstName: A string representing the first name of the recipient.
+        name: A string representing the first name of the recipient.
         link: A string representing a link to include in the email message.
 
     Returns:
@@ -29,9 +29,9 @@ async def sendEmail(receiver_email, subject, type, firstName, link):
     password = env['EMAIL_PASSWORD']
 
     # Define a regex pattern to match placeholders to replace in the email template
-    regex_pattern = r"\${firstName}|\${link}"
+    regex_pattern = r"\${name}|\${link}"
     # Define a dictionary of replacement strings for each matched placeholder
-    replacement_strings = {"${firstName}": firstName, "${link}": link}
+    replacement_strings = {"${name}": name, "${link}": link}
     # Define a function to replace matched placeholders with corresponding strings
 
     def replace(match):
