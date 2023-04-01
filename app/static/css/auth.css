@@ -1,0 +1,131 @@
+main {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+main .login-box {
+  display: flex;
+  align-items: stretch;
+  align-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 2em;
+  background-color: white;
+  border-radius: 10px;
+  width: 30%;
+  gap: 2em;
+}
+
+main .login-box h1 {
+  margin: 0;
+}
+
+main .login-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: center;
+  justify-content: flex-start;
+  gap: 0.5em;
+}
+
+main .login-box form .input-box {
+  display: flex;
+  height: 35px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  padding: 0.5em 1em;
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+main .login-box form .input-box span {
+  position: absolute;
+  transition: all 0.4s;
+}
+
+main .login-box form .input-box:focus-within span,
+main .login-box form .input-box.active span {
+  top: 5px;
+  font-size: 0.5em;
+}
+
+main .login-box form .input-box input {
+  width: 100%;
+  height: fit-content;
+  border: 0;
+  z-index: 1;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+main .login-box form .input-box input:focus {
+  outline: none;
+}
+
+main .login-box form .input-box:focus-within {
+  outline: none;
+  border-color: #026f9a !important;
+}
+
+main .login-box button {
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.05em;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  height: 40px;
+  margin-top: 1em;
+}
+
+main .login-box button div {
+  position: absolute;
+  left: -100%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s;
+  z-index: 0;
+}
+
+main .login-box button:hover div {
+  left: 0;
+  background-color: #026f9a;
+}
+
+main .login-box button span {
+  position: absolute;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+main .login-box button:hover span {
+  color: white;
+}
+
+main .login-box .sign-up {
+  font-size: 0.8em;
+  cursor: pointer;
+  width: fit-content;
+  color: black;
+  text-decoration: none;
+}
+
+main .login-box .sign-up:hover {
+  text-decoration: underline;
+}

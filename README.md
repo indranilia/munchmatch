@@ -1,93 +1,70 @@
-# Welcome to CS162 Final Project
+# Tinder for Food 12:30
 
-![template ci](https://github.com/minerva-schools/template-cs162/actions/workflows/ci.yaml/badge.svg)
+## Project Structure
 
-## Run Virtual Environment
+`/.github/workflows` contains CI/CD code.
 
-Virtual environment is a key component in ensuring that the application is configured in the right environment
+`/app` contains the application.
 
-##### Requirements
-* Python 3
-* Pip 3
+`/app/static` contains css/img/js files.
 
-```bash
-$ brew install python3
-```
+`/app/templates` contains html files.
 
-Pip3 is installed with Python3
+`/app/__init__.py` is the project initializer file.
 
-##### Installation
-To install virtualenv via pip run:
-```bash
-$ pip3 install virtualenv
-```
+`/app/auth` contains the routes related to authentication.
 
-##### Usage
-Creation of virtualenv:
+`/app/models` contains the DB models using SQLAlchemy.
+
+`/app/integrations` contains third-party integrations.
+
+`/app/extensions.py` contains build-in extensions that are initialized in `__init__.py`.
+
+`/app/jwt.py` contains the code for JWT authentication.
+
+`/app/tests` contains the unit tests files.
+
+`/.env.example` contains the variables you need for your .env.
+
+`/config.py` contains the environment variables used in this code
+
+## Before you start
+
+The `.env.example` contains all the environment variables you need to run this program. Simply copy all the content from it and paste in a new file called `.env` in the root of the app (same level as the app folder and the `.env.example` file).
+
+## Virtual Environment and run the app
+Create the virtualenv:
 
     $ virtualenv -p python3 venv
 
-If the above code does not work, you could also do
+Sometimes, the above doesn't work. You can try then:
 
     $ python3 -m venv venv
 
-To activate the virtualenv:
+Then, activate the activate the virtualenv. For Mac
 
     $ source venv/bin/activate
 
-Or, if you are **using Windows** - [reference source:](https://stackoverflow.com/questions/8921188/issue-with-virtualenv-cannot-activate)
+For **Windows** - [reference source:](https://stackoverflow.com/questions/8921188/issue-with-virtualenv-cannot-activate)
 
     $ venv\Scripts\activate
-
-To deactivate the virtualenv (after you finished working):
-
-    $ deactivate
 
 Install dependencies in virtual environment:
 
     $ pip3 install -r requirements.txt
 
-## Environment Variables
+To set the FLASK_APP varibale:
 
-All environment variables are stored within the `.env` file and loaded with dotenv package.
+    $ export FLASK_APP=app
 
-**Never** commit your local settings to the Github repository!
+To start the server:
 
-## Run Application
+	$ python3 -m flask run
 
-Start the server by running:
+To run the unit tests:
 
-    $ export FLASK_ENV=development
-    $ export FLASK_APP=web
-    $ python3 -m flask run
+	$ python3 -m unittest discovery app/tests
 
-## Unit Tests
-To run the unit tests use the following commands:
+When you are done. Close the virtual env.
 
-    $ python3 -m venv venv_unit
-    $ source venv_unit/bin/activate
-    $ pip install -r requirements-unit.txt
-    $ export DATABASE_URL='sqlite:///web.db'
-    $ pytest unit_test
-
-## Integration Tests
-Start by running the web server in a separate terminal.
-
-Now run the integration tests using the following commands:
-
-    $ python3 -m venv venv_integration
-    $ source venv_integration/bin/activate
-    $ pip3 install -r requirements-integration.txt
-    $ pytest integration_test
-
-## Deployment
-We will use Heroku as a tool to deploy your project, and it is FREE
-
-We added Procfile to help you deploy your repo easier, 
-but you may need to follow these steps to successfully deploy the project
-
-1. You need to have admin permission to be able to add and deploy your repo to Heroku 
-(Please ask your professor for permission)
-2. You need to create a database for your website. 
-We recommend you use [Heroku Postgres](https://dev.to/prisma/how-to-setup-a-free-postgresql-database-on-heroku-1dc1)
-3. You may need to add environment variables to deploy successfully - [Resource](https://devcenter.heroku.com/articles/config-vars#using-the-heroku-dashboard)
+    $ deactivate
