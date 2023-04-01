@@ -26,9 +26,9 @@ def setFormatter(fileName):
 
 
 # Setting up logger
-info_logger = logging.getLogger(f"kanban_board_info")
+info_logger = logging.getLogger(f"munch_match_info")
 info_logger.setLevel(logging.INFO)
 
 # Setting up logger
-error_logger = logging.getLogger(f"kanban_board_error")
+error_logger = logging.getLogger(f"munch_match_error")
 error_logger.setLevel(logging.ERROR)
