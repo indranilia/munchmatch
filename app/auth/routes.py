@@ -1,17 +1,40 @@
 import jwt
+import functools
 
-from flask import render_template, request, make_response, redirect, url_for
+from flask import render_template, request, make_response, redirect, url_for, g
 from uuid import uuid4
 from werkzeug.security import generate_password_hash, check_password_hash
 
 from datetime import datetime, timedelta
 from config import Config
-
 from app.auth import bp
 from app.models.user import User
 from app.extensions import db, info_logger, error_logger
 from app.integrations import emailSender
 from config import Config
+
+def login_required(view):
+    """
+    When user is not logged in, redirects to login page
+    Parameters
+    ------------
+    view: base html template
+    Returns
+    ------------
+    wrapped Login page
+
+    ## not sure about g.user, it think for this app we're using different
+    but it's nice having functools
+    """
+
+    @functools.wraps(view)
+    def wrapped_view(**kwargs):
+        if g.user is None:
+            return redirect(url_for("auth.login"))
+
+        return view(**kwargs)
+
+    return wrapped_view
 
 
 @bp.route('/login/', methods=['POST', 'GET'])
@@ -265,7 +288,7 @@ def resetPassword(uuid):
                     userData['password'])
                 db.session.commit()
                 info_logger.info(
-                    f"User successully resey password with email: {existingUser.email}")
+                    f"User successully reset password with email: {existingUser.email}")
                 return make_response({"message": 'Password reset!'}, 204)
 
         except Exception as error:
