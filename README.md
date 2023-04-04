@@ -2,6 +2,7 @@
 
 ## Project Structure
 
+
 `/.github/workflows` contains CI/CD code.
 
 `/app` contains the application.
