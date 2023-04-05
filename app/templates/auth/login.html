@@ -1,15 +1,40 @@
 {% extends "auth/_auth.html" %} {% from "auth/_macros.html" import input with
 context %} {% block content %}
-<div class="login-box">
-  <h1>Welcome</h1>
-  <form action="/" method="POST" id="login-form">
-    {{ input('Email Address', 'email', 'email') }} {{ input('Password',
-    'password', 'password') }}
-    <button type="submit">
-      <span>Login</span>
-      <div></div>
-    </button>
-  </form>
+<div class=navigation>
+  <div class=branding>
+    <div class="bar"></div>
+    <div class="munchmatch"></div>
+  </div>
+  <div class=menu>
+    <span  class="page">My Preferences</span>
+    <span  class="page">My Munches</span>
+    <span  class="page">About Us</span>
+    <span  class="page">My Account</span>
+    <span  class="page">Swipe</span>
+  </div>
+</div>
+
+<div class=login>
+  <div class=text><span>Welcome back.</span></div>
+  <form>
+  <div class=username_box>
+    <div class="rectangle_13"></div><span  class="text1">Username</span>
+    <div class="user"></div>
+  </div>
+  <div class=password_box>
+    <div class="rectangle_12"></div>
+    <div class="lock"></div><span  class="text1">Password</span>
+  <button type="submit" class=log_in_button>
+    <div class="rectangle_14"></div><span  class="text2">Log In</span>
+  </button>
+  <div class=or><div class="line"></div><span  class="or">or</span><div class="line"></div>
+  <button type="submit" class=log_in_button class=sign_up>
+    <div class="rectangle_15"></div><span  class="text2">Sign Up</span>
+  </button>
+  </div><span  class="text1">Forgot password?</span>
+  </div>
+</div>
+
   <a href="/auth/register" class="sign-up"
     >Still don't have an account? Sign up now!</a
   >
