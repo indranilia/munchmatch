@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <title> Munch Match </title>
+    <style>
+        .ui.container {
+            text-align: center;
+        }
+        .ui.grid.stackable>.column {
+            margin-bottom: 20px;
+        }
+        .ui.grid.stackable.buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button class="ui olive button" style="margin-top: 20px; margin-left: 10px;"><a href="{{ url_for('log_out') }}">Log out</a></button>
+    <div style="margin-top: 50px;" class="ui container">
+        <h1 class="ui center aligned header"> Munch Match </h1>
+        <div class="ui compact menu">
+            <a class="item">
+                <a href="{{ url_for('Swipe') }}">Swipe</a>
+            </a>
+            <a class="item">
+                <a href="{{ url_for('My Account') }}">My Account</a>
+            </a>
+            <a class="item">
+                <a href="{{ url_for('My Preferences') }}">My Preferences</a> 
+            </a>
+            <a class="item">
+                <a href="{{ url_for('My Munchies') }}">My Munchies</a>
+            </a>
+            <a class="item">
+                <a href="{{ url_for('About Us') }}">About Us</a> 
+            </a>
+        </div>
+    </div>
+
+        
+    <div style="margin-top: 50px;" class="ui container">
+        <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+            <div class="ui column center aligned">
+                <h3 style="text-align: center; margin-bottom: 30px;">Tell us more about your preferences</h3>
+                <h4 class="ui header" style="text-align: center;">Location</h4>
+            </div>
+            <div class="field">
+                <input type="text" name=task placeholder="Your full address or zipcode" style="width: 300px;"><br>
+            </div>
+            <!-- <button class="fluid pink ui button" type="submit" style="width: 100px;">Enter</button> -->
+    
+            <div class="ui column center aligned">
+                <h4 class="ui header" style="text-align: center;">Set range</h4>
+            </div>
+            <div class="ui progress">
+                <div class="bar">
+                  <div class="progress"></div>
+                </div>
+              </div>
+    
+            <div class="ui column center aligned">
+                <body>
+                    <div id="slider">
+                        <span>0 km</span>
+                        <input type="range" min="0" max="5" value="0" step="0.1" />
+                        <span>5 km</span>
+                    </div>
+                </body>
+            </div>
+    
+            <div class="ui column center aligned">
+                <h4 class="ui header" style="text-align: center;">Dietary Preferences</h4>
+            </div>
+            <div class="field">
+                <input type="text" name=task placeholder="Tell us more about your diet" style="width: 300px;"><br>
+            </div>
+            <div style="display: flex; justify-content: center; margin-bottom: 10px;">
+                <button class="ui primary basic button">Vegan</button>
+                <button class="ui secondary basic button">Vegetarian</button>
+                <button class="ui positive basic button">Pescatarian</button>
+                <button class="ui negative basic button">Gluten free</button>
+                <button class="ui secondary basic button">No nuts</button>
+            </div>
+    
+            <div class="ui column center aligned">
+                <h4 class="ui header" style="text-align: center;">Favorite Cuisine</h4>
+            </div>
+            <div class="field">
+                <input type="text" name=task placeholder="Tell us more about your favorites" style="width: 300px;"><br>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button class="ui primary basic button">Asian</button>
+                <button class="ui secondary basic button">Italian</button>
+                <button class="ui positive basic button">Indian
+    
