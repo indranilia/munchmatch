@@ -6,14 +6,14 @@ from app.auth import bp
 from app.models.meal import Meal
 from app.models.review import Review
 from werkzeug.exceptions import abort
-from auth import login_required
+from auth import token_required
 
 
 
 
 
 @bp.route("/meal/<int:id>/", methods=["GET", "POST"])
-@login_required
+@token_required
 def get_meal(id):
 
     currentMeal = Meal.query\
@@ -28,7 +28,7 @@ def get_meal(id):
 
 
 @bp.route("/add_review/", methods=["GET", "POST"])
-@login_required
+@token_required
 def add_review():
     """
     Adding a review
@@ -59,74 +59,43 @@ def add_review():
     else:
         info_logger.info(f"Review view rendered")
         return render_template('./meal/reviews.html')   
-    
-@bp.route("/update_review/<string:uuid>", methods=["GET", "PATCH"])
-@login_required
+
+            
+
+@bp.route("/update_review/<string:uuid>", methods=["PATCH"])
+@token_required
 def update_review(uuid):
-    if request.method == 'PATCH':
-        try:
-            reviewData = request.get_json()
 
-            existingReview = Review.query\
-                .filter_by(uuid=uuid)\
-                .first()
-            
+    try:
+        reviewData = request.get_json()
+
+        existingReview = Review.query\
+            .filter_by(uuid=uuid)\
+            .first()
+        
+        info_logger.info(
+            f"User review update")
+        
+        if not existingReview:
+            error_logger.error(
+                f"Review doesn't exist")
+            return make_response({"message": 'Review not found'}, 404)
+        else:
+            existingReview.description = reviewData['description']
+            existingReview.rating = reviewData['rating']
+            existingReview.date = datetime.utcnow()
+            db.session.commit()
             info_logger.info(
-                f"User review update")
-            
-            if not existingReview:
-                error_logger.error(
-                    f"Review doesn't exist")
-                return make_response({"message": 'Review not found'}, 404)
-            else:
-                existingReview.description = reviewData['description']
-                existingReview.rating = reviewData['rating']
-                existingReview.date = datetime.utcnow()
-                db.session.commit()
-                info_logger.info(
-                    f"Review was successully updated")
-                return make_response({"message": 'Review update!'}, 204)
+                f"Review was successully updated")
+            return make_response({"message": 'Review update!'}, 204), render_template('./meal/reviews.html')
 
-        except Exception as error:
-            return make_response({"message": error}, 500)
-            
+    except Exception as error:
+        return make_response({"message": error}, 500)
 
-@bp.route("/update_review/<string:uuid>", methods=["GET", "PATCH"])
-@login_required
-def update_review(uuid):
-    if request.method == 'PATCH':
-        try:
-            reviewData = request.get_json()
-
-            existingReview = Review.query\
-                .filter_by(uuid=uuid)\
-                .first()
-            
-            info_logger.info(
-                f"User review update")
-            
-            if not existingReview:
-                error_logger.error(
-                    f"Review doesn't exist")
-                return make_response({"message": 'Review not found'}, 404)
-            else:
-                existingReview.description = reviewData['description']
-                existingReview.rating = reviewData['rating']
-                existingReview.date = datetime.utcnow()
-                db.session.commit()
-                info_logger.info(
-                    f"Review was successully updated")
-                return make_response({"message": 'Review update!'}, 204)
-
-        except Exception as error:
-            return make_response({"message": error}, 500)
-    else:
-        info_logger.info(f"Review updated")
-        return render_template('./meal/reviews.html')
             
 
 @bp.route("/delete/<int:id>", methods=["POST"])
-@login_required
+@token_required
 def delete(uuid):
     """
     Delete a review
