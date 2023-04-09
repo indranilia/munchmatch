@@ -6,14 +6,14 @@ from app.auth import bp
 from app.models.meal import Meal
 from app.models.review import Review
 from werkzeug.exceptions import abort
-from auth import login_required
+from app.jwt import token_required
 
 
 
 
 
 @bp.route("/meal/<int:id>/", methods=["GET", "POST"])
-@login_required
+@token_required
 def get_meal(id):
 
     currentMeal = Meal.query\
@@ -28,7 +28,7 @@ def get_meal(id):
 
 
 @bp.route("/add_review/", methods=["GET", "POST"])
-@login_required
+@token_required
 def add_review():
     """
     Adding a review
@@ -61,7 +61,7 @@ def add_review():
         return render_template('./meal/reviews.html')   
     
 @bp.route("/update_review/<string:uuid>", methods=["GET", "PATCH"])
-@login_required
+@token_required
 def update_review(uuid):
     if request.method == 'PATCH':
         try:
@@ -92,7 +92,7 @@ def update_review(uuid):
             
 
 @bp.route("/update_review/<string:uuid>", methods=["GET", "PATCH"])
-@login_required
+@token_required
 def update_review(uuid):
     if request.method == 'PATCH':
         try:
@@ -126,7 +126,7 @@ def update_review(uuid):
             
 
 @bp.route("/delete/<int:id>", methods=["POST"])
-@login_required
+@token_required
 def delete(uuid):
     """
     Delete a review
