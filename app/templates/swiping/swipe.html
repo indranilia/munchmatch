@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+Swipe Page
+{% endblock %}
+
+{% block content %}
+    <div id="swipe-page">
+      <div id="dish-box">
+        <img id="dish-img" src="{{ url_for('static/css', filename=dishes[0]['image']) }}" alt="{{ dishes[0]['name'] }}">
+        <h2>{{ dishes[0]['name'] }}</h2>
+        <p>{{ dishes[0]['price'] }}</p>
+        <span>{{ dishes[0]['distance'] }} | {{ dishes[0]['rating'] }} rating</span>
+        <div>
+          <button class="check-button"></button>
+          <button class="info-button"></button>
+          <button class="ex-button"></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='/css/app.js') }}"></script>
+
+{% endblock %}
