@@ -1,45 +1,44 @@
-{% extends "auth/_auth.html" %} {% from "auth/_macros.html" import input with
-context %} {% block content %}
-<div class=navigation>
-  <div class=branding>
-    <div class="bar"></div>
-    <div class="munchmatch"></div>
-  </div>
-  <div class=menu>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="login.css"/>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<title>Login Page</title>
+</head>
+<div class=navigation>  
+    <div class = menu>
+    <span  class="page">Swipe</span>
+    <span  class="page">My Account</span>
     <span  class="page">My Preferences</span>
     <span  class="page">My Munches</span>
-    <span  class="page">About Us</span>
-    <span  class="page">My Account</span>
-    <span  class="page">Swipe</span>
-  </div>
+    <span  class="page">About us</span>
 </div>
-
+</div>
+<div class=visuals>
+    <div class="food"><span class="no"></span><span class="yes"></span></div>
+    <div class="text3">Get ready to meet your perfect match</div>
+</div>
 <div class=login>
-  <div class=text><span>Welcome back.</span></div>
+  <div class=text>Welcome back.</div>
   <form>
-  <div class=username_box>
-    <div class="rectangle_13"></div><span  class="text1">Username</span>
-    <div class="user"></div>
-  </div>
-  <div class=password_box>
-    <div class="rectangle_12"></div>
-    <div class="lock"></div><span  class="text1">Password</span>
-  <button type="submit" class=log_in_button>
-    <div class="rectangle_14"></div><span  class="text2">Log In</span>
+    <div  class="text1">Username</div>
+      <div class=input_box></div>
+    <div  class="text1">Password</div>
+    <div class=input_box></div>
+    <div class=password_box></div>
+    <div class="forgot">Forgot password?</div>
+    <div class="rectangle"> <button type="submit" class=log_in_button>
+    <span  class="text2">Log In</span>
+  </button></div>
+  <div class="or"><span>or</span></div>
+  <div class="rectangle"></div>
+  <button type="submit" class=sign_up_button>
+    <span  class="text2">Sign Up</span>
   </button>
-  <div class=or><div class="line"></div><span  class="or">or</span><div class="line"></div>
-  <button type="submit" class=log_in_button class=sign_up>
-    <div class="rectangle_15"></div><span  class="text2">Sign Up</span>
-  </button>
-  </div><span  class="text1">Forgot password?</span>
+  </form>
   </div>
-</div>
 
-  <a href="/auth/register" class="sign-up"
-    >Still don't have an account? Sign up now!</a
-  >
-  <a href="/auth/forgot-password" class="sign-up">Forgot Password</a>
-</div>
-{% endblock %} {% block javaScript %}
-<script src="/static/js/auth/login.js" type="module"></script>
-{% endblock %}
+
