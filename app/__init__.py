@@ -50,4 +50,10 @@ def create_app(config_class=Config):
 
     flaskApp.register_blueprint(swipe_bp, url_prefix="/swipe/")
 
+    from app.home import bp as home_bp
+    flaskApp.register_blueprint(home_bp, url_prefix='/home/')
+
     return flaskApp
+
+
+
