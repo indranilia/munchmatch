@@ -10,7 +10,7 @@ from app.jwt import token_required
 
 @bp.route("/add_preferences/", methods=["GET", "POST"])
 @token_required
-def add_review():
+def add_preferences():
     """
     Adding a review
     Parameters
@@ -18,7 +18,7 @@ def add_review():
     
     Returns
     -----------
-    Added review
+    Added preferences
     """
     if request.method == "POST":
         try:
@@ -31,7 +31,7 @@ def add_review():
                 .first()
             
             if not existingReview:
-                preference = Preferences(**newReview)
+                preference = Preferences(**newData)
                 db.session.add(preference)
                 db.session.commit()
         except Exception as error:
