@@ -29,20 +29,25 @@ def create_app(config_class=Config):
     fileFormatter = setFormatter(config_class.LOG_FILE_NAME)
     info_logger.addHandler(fileFormatter)
     error_logger.addHandler(fileFormatter)
-    info_logger.info('File log for Tinder for Food opened')
+    info_logger.info("File log for Tinder for Food opened")
 
     db.init_app(flaskApp)
-    info_logger.info('DB Initiated')
+    info_logger.info("DB Initiated")
     with flaskApp.app_context():
         db.create_all()
-        info_logger.info('Tables created on DB')
+        info_logger.info("Tables created on DB")
 
     # Registering blueprints
     @flaskApp.errorhandler(404)
     def notFound(e):
-        return redirect('/auth/login')
-    
+        return redirect("/auth/login")
+
     from app.auth import bp as auth_bp
-    flaskApp.register_blueprint(auth_bp, url_prefix='/auth/')
+
+    flaskApp.register_blueprint(auth_bp, url_prefix="/auth/")
+
+    from app.swipe import bp as swipe_bp
+
+    flaskApp.register_blueprint(swipe_bp, url_prefix="/swipe/")
 
     return flaskApp
