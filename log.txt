@@ -50697,3 +50697,637 @@
 2023-04-15 12:41:49,445 - kanban_board_info - INFO - Login view rendered without message
 2023-04-15 12:42:02,658 - kanban_board_info - INFO - Login view rendered without message
 2023-04-15 12:43:01,795 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 12:46:52,469 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 12:46:52,477 - kanban_board_info - INFO - DB Initiated
+2023-04-15 12:46:57,011 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 12:57:17,419 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 12:57:17,429 - kanban_board_info - INFO - DB Initiated
+2023-04-15 12:57:17,439 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 12:57:44,516 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 12:57:44,522 - kanban_board_info - INFO - DB Initiated
+2023-04-15 12:57:44,524 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 12:57:44,733 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 12:57:44,738 - kanban_board_info - INFO - DB Initiated
+2023-04-15 12:57:44,740 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 12:58:25,879 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 12:58:25,886 - kanban_board_info - INFO - DB Initiated
+2023-04-15 12:58:25,889 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 12:58:45,610 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 12:58:45,616 - kanban_board_info - INFO - DB Initiated
+2023-04-15 12:58:45,618 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 12:59:05,349 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 12:59:05,356 - kanban_board_info - INFO - DB Initiated
+2023-04-15 12:59:05,358 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 13:00:04,022 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 13:00:04,029 - kanban_board_info - INFO - DB Initiated
+2023-04-15 13:00:04,032 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 13:00:05,085 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 13:00:34,955 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 13:00:34,962 - kanban_board_info - INFO - DB Initiated
+2023-04-15 13:00:34,964 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 13:00:47,561 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 13:00:47,568 - kanban_board_info - INFO - DB Initiated
+2023-04-15 13:00:47,571 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 13:01:46,963 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 13:02:21,635 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 13:02:21,642 - kanban_board_info - INFO - DB Initiated
+2023-04-15 13:02:21,645 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 13:02:22,783 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 13:24:11,425 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 13:24:11,433 - kanban_board_info - INFO - DB Initiated
+2023-04-15 13:24:11,436 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 13:26:33,322 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 13:26:33,330 - kanban_board_info - INFO - DB Initiated
+2023-04-15 13:26:33,333 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 13:58:07,986 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 13:58:07,994 - kanban_board_info - INFO - DB Initiated
+2023-04-15 13:58:07,996 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 13:59:35,289 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 13:59:35,455 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 13:59:35,624 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 13:59:48,560 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 13:59:48,562 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 13:59:48,664 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:05:22,569 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:05:22,572 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:05:22,745 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:05:33,326 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:05:40,134 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:08:59,046 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:08:59,050 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:08:59,059 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:08:59,352 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:09:45,398 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:09:45,402 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:09:45,439 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:09:45,652 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:10:52,469 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:10:54,336 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:11:01,696 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:11:19,246 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:11:40,459 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:11:45,237 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:12:56,884 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:12:59,278 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:13:08,292 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:13:09,743 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:14:20,879 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:14:22,865 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:14:28,414 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:14:29,839 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:14:46,474 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:14:47,782 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:16:30,100 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:16:31,916 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:16:54,190 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:16:54,193 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:16:54,195 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:16:54,509 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:16:59,781 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:16:59,783 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:16:59,786 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:17:00,067 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:18:47,342 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:18:47,364 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:18:47,374 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:18:47,591 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:18:53,083 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:18:53,095 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:18:53,111 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:18:53,363 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:19:31,757 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:19:31,762 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:19:31,774 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:19:32,050 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:19:51,032 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:19:51,037 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:19:51,060 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:19:51,297 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:20:40,411 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:20:40,421 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:20:40,432 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:20:40,671 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:20:45,345 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:20:45,347 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:20:45,354 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:20:45,579 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:21:14,952 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:21:14,956 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:21:14,980 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:21:15,238 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:21:35,306 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:21:35,308 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:21:35,311 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:21:35,550 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:21:41,017 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:21:41,020 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:21:41,039 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:21:41,377 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:21:48,613 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:21:48,616 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:21:48,620 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:21:48,850 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:22:28,290 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:22:28,294 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:22:28,322 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:22:28,601 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:23:42,807 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:23:42,811 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:23:42,814 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:23:43,040 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:24:11,793 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:24:11,804 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:24:11,812 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:24:12,051 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:24:35,560 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:24:35,563 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:24:35,572 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:24:35,871 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:25:22,021 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 14:25:22,028 - kanban_board_info - INFO - DB Initiated
+2023-04-15 14:25:22,031 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 14:25:47,280 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:26:07,288 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:27:16,224 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 14:27:16,231 - kanban_board_info - INFO - DB Initiated
+2023-04-15 14:27:16,234 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 14:27:44,543 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 14:27:44,548 - kanban_board_info - INFO - DB Initiated
+2023-04-15 14:27:44,550 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 14:27:44,770 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 14:27:44,774 - kanban_board_info - INFO - DB Initiated
+2023-04-15 14:27:44,777 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 14:27:58,021 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:27:58,039 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:27:58,039 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:27:58,376 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:33:54,822 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:33:54,825 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:33:54,832 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:33:55,083 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:43:06,070 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:43:06,074 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:43:06,082 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:43:06,339 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:43:41,754 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:43:41,764 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:43:41,766 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:43:41,769 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:43:41,964 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:25,147 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:25,155 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:25,164 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:25,166 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:25,356 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:33,626 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:33,630 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:33,632 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:33,635 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:33,896 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:42,647 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:42,657 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:42,659 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:42,867 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:49,095 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:49,103 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:49,107 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:49,108 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:49,335 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:56,033 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:56,045 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:56,047 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:56,050 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:45:56,245 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:46:03,415 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:46:03,418 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:46:03,534 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:46:03,707 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:47:01,022 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:47:01,026 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:47:01,028 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:47:01,037 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:47:01,267 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:49:36,261 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:49:36,263 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:49:36,265 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:49:36,477 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:50:08,768 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:50:08,774 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:50:08,779 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:50:08,785 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:50:08,986 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:50:19,246 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:50:19,259 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:50:19,265 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:50:19,267 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:50:19,515 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:51:25,602 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:51:25,637 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:51:25,640 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:51:25,660 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:51:25,875 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:51:41,622 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 14:51:41,630 - kanban_board_info - INFO - DB Initiated
+2023-04-15 14:51:41,633 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 14:51:41,883 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 14:51:41,888 - kanban_board_info - INFO - DB Initiated
+2023-04-15 14:51:41,890 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 14:51:43,038 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:51:43,046 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:51:43,048 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:51:43,050 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:51:43,247 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:51:43,998 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:51:44,003 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:51:44,005 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:51:44,014 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:51:44,241 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:29,726 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:29,728 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:29,733 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:29,741 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:29,979 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:30,296 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:30,300 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:30,314 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:30,319 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:30,548 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:31,037 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:31,043 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:31,047 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:31,049 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:31,268 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:31,534 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:31,538 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:31,542 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:31,547 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:31,733 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:31,948 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:31,952 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:31,956 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:31,968 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:32,215 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:32,584 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:32,591 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:32,598 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:32,600 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:32,813 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:40,115 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:40,129 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:40,133 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:40,136 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:40,393 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:40,627 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:40,631 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:40,636 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:40,643 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:40,849 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:41,079 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:41,082 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:41,083 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:41,085 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:41,330 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:41,526 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:41,548 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:41,552 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:41,556 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:41,751 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:42,031 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:42,033 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:42,035 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:42,037 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:42,219 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:42,524 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:42,535 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:42,538 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:42,547 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:42,765 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:47,035 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:47,038 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:47,066 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:47,068 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:47,303 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:47,663 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:47,675 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:47,677 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:47,681 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:47,884 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:48,181 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:48,183 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:48,185 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:48,192 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:48,433 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:49,851 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:49,857 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:49,862 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:49,879 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:52:50,062 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:53:43,133 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:53:43,151 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:53:43,154 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:53:43,391 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:53:43,674 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:53:43,682 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:53:43,684 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:53:43,867 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:53:54,266 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:53:54,276 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:53:54,291 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:53:54,565 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:54:00,283 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:54:00,287 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:54:00,293 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:54:00,566 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:54:23,197 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:54:23,202 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:54:23,204 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:54:23,448 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 14:56:58,779 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 14:56:58,788 - kanban_board_info - INFO - DB Initiated
+2023-04-15 14:56:58,791 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 14:57:32,611 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 14:57:32,620 - kanban_board_info - INFO - DB Initiated
+2023-04-15 14:57:32,623 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 14:58:03,179 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 14:58:03,184 - kanban_board_info - INFO - DB Initiated
+2023-04-15 14:58:03,198 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 14:58:03,415 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 14:58:03,419 - kanban_board_info - INFO - DB Initiated
+2023-04-15 14:58:03,421 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 15:00:17,181 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 15:00:17,189 - kanban_board_info - INFO - DB Initiated
+2023-04-15 15:00:17,202 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 15:02:37,537 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:02:44,860 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:02:58,570 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 15:02:58,578 - kanban_board_info - INFO - DB Initiated
+2023-04-15 15:02:58,581 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 15:02:58,612 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:03:01,907 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:03:02,116 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:03:06,404 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 15:03:06,409 - kanban_board_info - INFO - DB Initiated
+2023-04-15 15:03:06,422 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 15:03:06,654 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 15:03:06,658 - kanban_board_info - INFO - DB Initiated
+2023-04-15 15:03:06,660 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 15:03:07,433 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:03:07,658 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:03:08,241 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:03:08,474 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:03:09,497 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:03:09,699 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:03:10,097 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:03:10,336 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:04:02,194 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 15:04:02,201 - kanban_board_info - INFO - DB Initiated
+2023-04-15 15:04:02,203 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 15:04:02,570 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:04:02,582 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:04:02,586 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:04:02,851 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:04:26,022 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 15:04:26,027 - kanban_board_info - INFO - DB Initiated
+2023-04-15 15:04:26,030 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 15:04:27,055 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:04:27,063 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:04:27,066 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:04:27,323 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:05:22,434 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:05:22,441 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:05:22,445 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:05:22,743 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:06:20,770 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 15:06:20,778 - kanban_board_info - INFO - DB Initiated
+2023-04-15 15:06:20,780 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 15:06:27,656 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:06:27,705 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:06:27,709 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:06:27,996 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:06:47,638 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 15:06:47,643 - kanban_board_info - INFO - DB Initiated
+2023-04-15 15:06:47,657 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 15:06:52,597 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:06:52,612 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 15:06:52,847 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:03:46,601 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:03:46,610 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:03:46,613 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:03:48,933 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:03:49,358 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:04:45,085 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:04:45,091 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:04:45,094 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:07:44,352 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:07:44,360 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:07:44,364 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:07:49,094 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:07:49,332 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:07:50,175 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:07:50,384 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:07:58,977 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:07:58,983 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:07:58,988 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:08:01,273 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:08:01,285 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:08:01,287 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:08:01,527 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:08:15,644 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:08:15,649 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:08:15,652 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:08:15,811 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:08:15,822 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:08:15,823 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:08:16,132 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:09:06,007 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:09:06,015 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:09:06,017 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:09:06,824 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:09:06,884 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:09:07,166 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:10:10,656 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:10:10,664 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:10:10,666 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:10:11,056 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:10:11,281 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:10:30,448 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:10:30,454 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:10:30,456 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:10:43,076 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:10:43,083 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:10:43,096 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:10:43,255 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:10:43,478 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:10:54,723 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:10:54,729 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:10:54,736 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:10:56,048 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:10:56,052 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:10:56,054 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:11:52,787 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:11:52,795 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:11:52,808 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:11:56,906 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:11:56,917 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:11:56,920 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:11:57,174 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:15:37,928 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:15:37,937 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:15:37,940 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:15:42,324 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:15:42,329 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:15:42,331 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:15:45,794 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:15:45,803 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:15:45,811 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:15:46,101 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:16:11,392 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:16:11,399 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:16:11,402 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:16:13,669 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:16:13,682 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:16:13,949 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:16:28,020 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:16:28,026 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:16:28,028 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:16:34,456 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:16:34,461 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:16:34,466 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:16:35,522 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:16:35,530 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:16:35,535 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:16:35,772 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:16:45,067 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:16:45,074 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:16:45,076 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:16:49,416 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:16:49,420 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:16:49,422 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:16:50,587 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:16:50,607 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:16:50,613 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:16:50,879 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:16:58,638 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:16:58,659 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:16:59,074 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:16:59,081 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:16:59,085 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:16:59,123 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:17:33,080 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:17:33,087 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:17:33,090 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:17:41,595 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:17:41,601 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:17:41,603 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:17:42,943 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:17:43,171 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:18:18,790 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:18:19,053 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:18:31,837 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:18:31,844 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:18:31,850 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:18:32,695 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:18:32,717 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:18:32,720 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:18:32,941 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:19:47,953 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:19:47,961 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:19:47,972 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:19:48,206 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:20:07,421 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:20:07,452 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:20:07,690 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:20:46,099 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:20:46,359 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:21:09,024 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:21:09,031 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:21:09,036 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:21:10,091 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:21:10,102 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:21:10,104 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:21:10,331 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:21:24,204 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:21:24,207 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:21:24,215 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:21:24,526 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:22:09,621 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:22:09,631 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:22:09,938 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:22:24,188 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:22:24,431 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:22:31,994 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:22:32,003 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:22:32,009 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:22:33,048 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:22:33,057 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:22:33,073 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:22:33,302 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:22:59,154 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:22:59,173 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:22:59,178 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:22:59,510 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:23:31,107 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:23:31,115 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:23:31,393 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:23:37,198 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:23:37,463 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:23:45,349 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:23:45,570 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:23:49,962 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:23:49,969 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:23:49,975 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:23:50,604 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:23:50,615 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:23:50,618 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:23:50,880 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:24:16,093 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:24:16,107 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:24:16,111 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:24:16,322 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:25:45,980 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:25:45,984 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:25:45,996 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:25:46,270 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:25:57,274 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:25:57,507 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:26:17,546 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:26:17,553 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:26:17,571 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:26:18,854 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:26:18,866 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:26:18,867 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:26:19,126 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:26:42,573 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:26:42,819 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:26:57,423 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:26:57,902 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:26:57,909 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:26:57,915 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:26:57,957 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:26:59,013 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:26:59,022 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:26:59,026 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:26:59,233 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:27:41,969 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:27:42,220 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:27:54,423 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:27:54,430 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:27:54,436 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:27:55,512 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:27:55,533 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:27:55,537 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:27:55,804 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:28:23,351 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:28:23,357 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:28:23,363 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:28:37,455 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:28:37,468 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:28:37,471 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:28:37,730 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:30:00,614 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 16:30:00,623 - kanban_board_info - INFO - DB Initiated
+2023-04-15 16:30:00,641 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 16:30:01,460 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:30:01,485 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:30:01,490 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 16:30:01,748 - kanban_board_info - INFO - Login view rendered without message

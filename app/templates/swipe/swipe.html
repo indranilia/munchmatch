@@ -1,0 +1,31 @@
+{% extends "swipe/base.html" %} {% block title %} Swipe Page {% endblock %} {%
+block content %}
+<div class="all-meals-container">
+  <div class="all-meals-status">
+    <i class="fa fa-remove"></i>
+    <i class="fa fa-heart"></i>
+  </div>
+
+  <div class="all-meal-cards">
+    {% for meal in meals %}
+    <div class="meal-card" id={{meal['uuid']}}>
+      <img
+        src="{{ url_for('static', filename='img/' + meal['picture']) }}"
+        alt="{{ meal['name'] }}"
+      />
+      <h2>{{ meal['name'] }}</h2>
+      <p>{{ meal['price'] }}</p>
+      <span>{{ meal['distance'] }} | {{ meal['rating'] }} rating</span>
+      <div class="actions">
+        <button class="check-button"></button>
+        <button class="info-button"></button>
+        <button class="ex-button"></button>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<script src="/static/js/swipe/hammer.min.js"></script>
+<script src="/static/js/swipe/swipe.js" type="module"></script>
+
+{% endblock %}

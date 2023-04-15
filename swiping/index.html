@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card Swiper</title>
-    <link rel="stylesheet" href="./static/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Sy4JkzB7/1s8T1Wd7vTtTfvuL7xh2zNTW9M4C70rygprh7iuhDYANlWZapElC2nLyzJLRLx8bKMdYXvXtNS1nA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="./static/swipe.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-Sy4JkzB7/1s8T1Wd7vTtTfvuL7xh2zNTW9M4C70rygprh7iuhDYANlWZapElC2nLyzJLRLx8bKMdYXvXtNS1nA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <nav>
       <a href="/munchmatch">
-        <img src="static/icon.png" height="20" width="25"><span class="munch">Munch</span><span class="match">Match</span>
+        <img src="static/icon.png" height="20" width="25" /><span class="munch"
+          >Munch</span
+        ><span class="match">Match</span>
       </a>
       <a href="/swipe">Swipe</a>
       <a href="/my_account">My Account</a>
@@ -23,17 +33,14 @@
     </nav>
 
     <div class="swiper-container">
-      <ion-icon id = 'swipe_backward' name="arrow-back"></ion-icon>
-      <div id="swiper"> </div>
-      <ion-icon id = 'swipe_forward' name="arrow-forward"></ion-icon>
+      <ion-icon id="swipe_backward" name="arrow-back"></ion-icon>
+      <div id="swiper"></div>
+      <ion-icon id="swipe_forward" name="arrow-forward"></ion-icon>
     </div>
-    
+
     <script src="./dish.js"></script>
     <script src="./script.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    
   </body>
-
 </html>
-

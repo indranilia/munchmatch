@@ -2,4 +2,4 @@ from flask import Blueprint
 
 bp = Blueprint("swipe", __name__)
 
-from app.swipe import routes
+from app.routes.swipe import routes
