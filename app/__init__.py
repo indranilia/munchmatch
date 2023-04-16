@@ -42,7 +42,11 @@ def create_app(config_class=Config):
     def notFound(e):
         return redirect('/auth/login')
     
-    from app.auth import bp as auth_bp
-    flaskApp.register_blueprint(auth_bp, url_prefix='/auth/')
+    from app.home import bp as home_bp
+    flaskApp.register_blueprint(home_bp, url_prefix='/home/')
+
+    # from app.auth import bp as auth_bp
+    # flaskApp.register_blueprint(auth_bp, url_prefix='/auth/')
+    # change to home
 
     return flaskApp
