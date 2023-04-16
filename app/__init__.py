@@ -40,7 +40,7 @@ def create_app(config_class=Config):
     # Registering blueprints
     @flaskApp.errorhandler(404)
     def notFound(e):
-        return redirect("/auth/login")
+        return redirect("/auth")
 
     from app.routes.auth import bp as auth_bp
 

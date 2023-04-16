@@ -5,7 +5,7 @@ from app.routes.swipe import bp
 from app.models.swipe import Swipe
 from app.models.meal import Meal
 from app.extensions import db
-import json
+from app.jwt import token_required
 
 
 dishes = [
@@ -48,7 +48,8 @@ dishes = [
 
 
 @bp.route("/")
-def index():
+@token_required
+def index(user):
     mealsExist = len(Meal.query.all())
     if not mealsExist:
         for dish in dishes:
@@ -57,19 +58,30 @@ def index():
 
         db.session.commit()
 
-    meals = (
+    return render_template("./swipe/swipe.html")
+
+
+@bp.route("meals")
+@token_required
+def getMeals(user):
+    query = (
         Meal.query.filter(
-            Meal.id.notin_(db.session.query(Swipe.meal_id).filter_by(user_id=1))
+            Meal.id.notin_(db.session.query(Swipe.meal_id).filter_by(user_id=user.id))
         )
         .limit(3)
         .all()
     )
 
-    return render_template("./swipe/swipe.html", meals=meals)
+    meals = [meal.as_dict() for meal in query]
+
+    return make_response(
+        {"message": "Meals retrieved successfully", "data": meals}, 200
+    )
 
 
 @bp.route("/swipe/<string:uuid>/<string:direction>", methods=["POST"])
-def swipe(uuid, direction):
+@token_required
+def swipe(user, uuid, direction):
     """
     A route for showing and handling swipe requests for meals
 
@@ -82,10 +94,11 @@ def swipe(uuid, direction):
     # Get the user ID from the session
     # user_id = db.session.get("user_id")
     meal = Meal.query.filter_by(uuid=uuid).first()
-    print(meal)
 
     # Add a new swipe to the database
-    swipe = Swipe(uuid=str(uuid4()), direction=direction, user_id=1, meal_id=meal.id)
+    swipe = Swipe(
+        uuid=str(uuid4()), direction=direction, user_id=user.id, meal_id=meal.id
+    )
     db.session.add(swipe)
     db.session.commit()
 
@@ -93,7 +106,7 @@ def swipe(uuid, direction):
     # Get three random meals that are not in the swipe table yet
     query = (
         Meal.query.filter(
-            Meal.id.notin_(db.session.query(Swipe.meal_id).filter_by(user_id=1))
+            Meal.id.notin_(db.session.query(Swipe.meal_id).filter_by(user_id=user.id))
         )
         .limit(3)
         .all()

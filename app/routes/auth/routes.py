@@ -14,7 +14,12 @@ from app.integrations import emailSender
 from config import Config
 
 
-@bp.route("/login/", methods=["POST", "GET"])
+@bp.route("/")
+def auth():
+    return render_template("./auth/auth.html")
+
+
+@bp.route("/login/", methods=["POST"])
 def login():
     """
     A route for logging in a user.
@@ -26,62 +31,44 @@ def login():
         A rendered template containing the login page (for GET requests),
         or a response object indicating success or failure (for POST requests).
     """
-    if request.method == "POST":
-        try:
-            userData = request.get_json()
+    try:
+        userData = request.get_json()
 
-            existingUser = User.query.filter_by(email=userData["email"]).first()
+        existingUser = User.query.filter_by(email=userData["email"]).first()
 
-            info_logger.info(f"Client tried to log in with email: {userData['email']}")
+        info_logger.info(f"Client tried to log in with email: {userData['email']}")
 
-            if not existingUser:
-                error_logger.error(f"User not found with email: {userData['email']}")
-                return make_response({"message": "User not found"}, 404)
-            # Compares the password with the hashed password stored in the database
-            elif check_password_hash(existingUser.password, userData["password"]):
-                if existingUser.verified:
-                    jwtToken = jwt.encode(
-                        {
-                            "uuid": existingUser.uuid,
-                            "exp": datetime.utcnow() + timedelta(days=1),
-                        },
-                        Config.SECRET_KEY,
-                    )
-
-                    info_logger.info(
-                        f"User successfully log in with email: {userData['email']}"
-                    )
-
-                    response = make_response({"message": "User logged in!"}, 200)
-                    response.set_cookie("user_uuid", jwtToken)
-
-                    return response
-                else:
-                    error_logger.error(
-                        f"User tried to log in with email: {userData['email']}, but they are not verified"
-                    )
-                    return make_response(
-                        {"message": "Please, verify your email first"}, 401
-                    )
-
-            error_logger.error(
-                f"User tried to log in with email: {userData['email']}, but used the wrong password"
+        if not existingUser:
+            error_logger.error(f"User not found with email: {userData['email']}")
+            return make_response({"message": "User not found"}, 404)
+        # Compares the password with the hashed password stored in the database
+        elif check_password_hash(existingUser.password, userData["password"]):
+            jwtToken = jwt.encode(
+                {
+                    "uuid": existingUser.uuid,
+                    "exp": datetime.utcnow() + timedelta(days=1),
+                },
+                Config.SECRET_KEY,
             )
-            return make_response({"message": "Wrong password"}, 401)
-        except Exception as error:
-            error_logger.error(f"Error on log in")
-            return make_response({"message": error}, 500)
-    else:
-        if "message" in request.args:
-            info_logger.info(f"Login view rendered with message")
-            response_auth = request.args["message"]
-            return render_template("./auth/login.html", message=response_auth)
-        else:
-            info_logger.info(f"Login view rendered without message")
-            return render_template("./auth/login.html")
+
+            info_logger.info(
+                f"User successfully log in with email: {userData['email']}"
+            )
+
+            response = make_response({"message": "User logged in!"}, 200)
+            response.set_cookie("user_uuid", jwtToken)
+
+            return response
+        error_logger.error(
+            f"User tried to log in with email: {userData['email']}, but used the wrong password"
+        )
+        return make_response({"message": "Wrong password"}, 401)
+    except Exception as error:
+        error_logger.error(f"Error on log in")
+        return make_response({"message": error}, 500)
 
 
-@bp.route("/register/", methods=["POST", "GET"])
+@bp.route("/register/", methods=["POST"])
 async def register():
     """
     A route for registering a new user.
@@ -94,62 +81,41 @@ async def register():
         requests), or a response object indicating success or failure
         (for POST requests).
     """
-    if request.method == "POST":
-        try:
-            newUserData = request.get_json()
-            newUserData["uuid"] = str(uuid4())
-            info_logger.info(
-                f"Client tried to log in with email: {newUserData['email']}"
+    try:
+        newUserData = request.get_json()
+        newUserData["uuid"] = str(uuid4())
+        info_logger.info(f"Client tried to log in with email: {newUserData['email']}")
+
+        existingUser = User.query.filter_by(email=newUserData["email"]).first()
+
+        if not existingUser:
+            # Hashes the password for saving in the database
+            newUserData["password"] = generate_password_hash(newUserData["password"])
+            user = User(**newUserData)
+            db.session.add(user)
+            db.session.commit()
+
+            info_logger.info(f"User registered with email: {newUserData['email']}")
+
+            return make_response(
+                {
+                    "message": "User created successfully!\
+                                    Enter your email to verify your account.\
+                                    Remember to check your spam folder. (You may need\
+                                    to mark as not a Span to access the link)"
+                },
+                201,
             )
-
-            existingUser = User.query.filter_by(email=newUserData["email"]).first()
-
-            if not existingUser:
-                # Hashes the password for saving in the database
-                newUserData["password"] = generate_password_hash(
-                    newUserData["password"]
-                )
-                user = User(**newUserData)
-                db.session.add(user)
-                db.session.commit()
-
-                info_logger.info(
-                    f"Email sent to {newUserData['email']} for user verify their account"
-                )
-
-                # Sending verification email
-                await emailSender.sendEmail(
-                    newUserData["email"],
-                    "Verify your account for Kanban Board",
-                    "newUser",
-                    newUserData["name"],
-                    f"{request.url_root}auth/verify/{newUserData['uuid']}",
-                )
-
-                info_logger.info(f"User registered with email: {newUserData['email']}")
-
-                return make_response(
-                    {
-                        "message": "User created successfully!\
-                                      Enter your email to verify your account.\
-                                      Remember to check your spam folder. (You may need\
-                                      to mark as not a Span to access the link)"
-                    },
-                    201,
-                )
-            else:
-                info_logger.info(
-                    f"User already registered with email: {newUserData['email']}"
-                )
-                return make_response(
-                    {"message": "This email is already registered! Login now"}, 202
-                )
-        except Exception as error:
-            error_logger.error(f"Error on registering")
-            return make_response({"message": error}, 500)
-    else:
-        info_logger.info(f"Register view rendered")
-        return render_template("./auth/register.html")
+        else:
+            info_logger.info(
+                f"User already registered with email: {newUserData['email']}"
+            )
+            return make_response(
+                {"message": "This email is already registered! Login now"}, 202
+            )
+    except Exception as error:
+        error_logger.error(f"Error on registering")
+        return make_response({"message": error}, 500)
 
 
 @bp.route("/logout/")

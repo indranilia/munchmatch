@@ -51331,3 +51331,183 @@
 2023-04-15 16:30:01,485 - kanban_board_info - INFO - Login view rendered without message
 2023-04-15 16:30:01,490 - kanban_board_info - INFO - Login view rendered without message
 2023-04-15 16:30:01,748 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 17:01:19,153 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 17:01:19,159 - kanban_board_info - INFO - DB Initiated
+2023-04-15 17:01:19,162 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 17:03:16,102 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 17:03:16,108 - kanban_board_info - INFO - DB Initiated
+2023-04-15 17:03:16,110 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 17:03:16,324 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 17:03:16,328 - kanban_board_info - INFO - DB Initiated
+2023-04-15 17:03:16,330 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 17:03:32,718 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 17:06:07,160 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 17:06:07,168 - kanban_board_info - INFO - DB Initiated
+2023-04-15 17:06:07,184 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 17:06:10,054 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 17:06:10,169 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 17:06:10,174 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 17:06:10,176 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 17:06:10,634 - kanban_board_info - INFO - Login view rendered without message
+2023-04-15 17:09:37,791 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 17:09:37,799 - kanban_board_info - INFO - DB Initiated
+2023-04-15 17:09:37,802 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 17:09:44,282 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 17:09:44,287 - kanban_board_info - INFO - DB Initiated
+2023-04-15 17:09:44,289 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 17:10:36,557 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 17:10:36,564 - kanban_board_info - INFO - DB Initiated
+2023-04-15 17:10:36,567 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 17:10:36,784 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 17:10:36,788 - kanban_board_info - INFO - DB Initiated
+2023-04-15 17:10:36,790 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 17:10:53,446 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 17:10:53,452 - kanban_board_info - INFO - DB Initiated
+2023-04-15 17:10:53,454 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 22:38:26,283 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 22:38:26,291 - kanban_board_info - INFO - DB Initiated
+2023-04-15 22:38:26,301 - kanban_board_info - INFO - Tables created on DB
+2023-04-15 23:03:09,636 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-15 23:03:09,644 - kanban_board_info - INFO - DB Initiated
+2023-04-15 23:03:09,649 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 00:05:58,779 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 00:05:58,786 - kanban_board_info - INFO - DB Initiated
+2023-04-17 00:05:58,797 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 00:05:59,014 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 00:05:59,020 - kanban_board_info - INFO - DB Initiated
+2023-04-17 00:05:59,023 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 00:18:55,622 - kanban_board_error - ERROR - Error on log in
+2023-04-17 03:59:27,852 - kanban_board_error - ERROR - Error on log in
+2023-04-17 04:00:20,419 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:00:20,427 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:00:20,430 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:01:02,944 - kanban_board_error - ERROR - Error on log in
+2023-04-17 04:02:12,162 - kanban_board_info - INFO - Client tried to log in with email: kjhkjh
+2023-04-17 04:02:12,163 - kanban_board_error - ERROR - User not found with email: kjhkjh
+2023-04-17 04:02:44,084 - kanban_board_info - INFO - Client tried to log in with email: kjjiyujhkj
+2023-04-17 04:02:44,085 - kanban_board_error - ERROR - User not found with email: kjjiyujhkj
+2023-04-17 04:09:16,282 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:09:16,291 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:09:16,304 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:11:09,935 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:11:09,942 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:11:09,947 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:11:23,558 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:11:23,564 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:11:23,567 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:11:41,036 - kanban_board_info - INFO - Client tried to log in with email: fernando.luis953@gmail.com
+2023-04-17 04:11:41,170 - kanban_board_info - INFO - User registered with email: fernando.luis953@gmail.com
+2023-04-17 04:12:59,432 - kanban_board_info - INFO - Client tried to log in with email: 19monteiroluis@gmail.com
+2023-04-17 04:12:59,552 - kanban_board_info - INFO - User registered with email: 19monteiroluis@gmail.com
+2023-04-17 04:18:28,395 - kanban_board_info - INFO - Client tried to log in with email: luiscerqueira@uni.minerva.edu
+2023-04-17 04:18:28,549 - kanban_board_info - INFO - User registered with email: luiscerqueira@uni.minerva.edu
+2023-04-17 04:18:43,883 - kanban_board_info - INFO - Client tried to log in with email: fernando.luis953@gmail.com
+2023-04-17 04:18:43,993 - kanban_board_info - INFO - User successfully log in with email: fernando.luis953@gmail.com
+2023-04-17 04:19:00,209 - kanban_board_info - INFO - Client tried to log in with email: fernando.luis953@gmail.com
+2023-04-17 04:19:00,298 - kanban_board_info - INFO - User successfully log in with email: fernando.luis953@gmail.com
+2023-04-17 04:19:07,641 - kanban_board_info - INFO - Client tried to log in with email: fernando.luis953@gmail.com
+2023-04-17 04:19:07,756 - kanban_board_error - ERROR - User tried to log in with email: fernando.luis953@gmail.com, but used the wrong password
+2023-04-17 04:23:21,323 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:23:21,332 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:23:21,336 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:23:23,663 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:23:23,668 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:23:23,670 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:23:25,997 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:23:26,002 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:23:26,005 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:24:14,184 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:24:14,193 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:24:14,197 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:24:17,579 - kanban_board_info - INFO - Client tried to log in with email: fernando.luis953@gmail.com
+2023-04-17 04:24:17,675 - kanban_board_error - ERROR - User tried to log in with email: fernando.luis953@gmail.com, but used the wrong password
+2023-04-17 04:24:22,547 - kanban_board_info - INFO - Client tried to log in with email: fernando.luis953@gmail.com
+2023-04-17 04:24:22,668 - kanban_board_info - INFO - User successfully log in with email: fernando.luis953@gmail.com
+2023-04-17 04:24:29,861 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:24:29,868 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:24:29,870 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:25:07,869 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:25:07,876 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:25:07,878 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:25:09,329 - kanban_board_info - INFO - Client tried to log in with email: fernando.luis953@gmail.com
+2023-04-17 04:25:09,426 - kanban_board_info - INFO - User successfully log in with email: fernando.luis953@gmail.com
+2023-04-17 04:25:11,103 - kanban_board_info - INFO - Client tried to log in with email: fernando.luis953@gmail.com
+2023-04-17 04:25:11,199 - kanban_board_info - INFO - User successfully log in with email: fernando.luis953@gmail.com
+2023-04-17 04:25:12,960 - kanban_board_info - INFO - Client tried to log in with email: fernando.luis953@gmail.com
+2023-04-17 04:25:13,054 - kanban_board_info - INFO - User successfully log in with email: fernando.luis953@gmail.com
+2023-04-17 04:26:20,699 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:26:20,707 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:26:20,709 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:26:23,690 - kanban_board_info - INFO - Client tried to log in with email: fernando.luis953@gmail.com
+2023-04-17 04:26:23,781 - kanban_board_info - INFO - User successfully log in with email: fernando.luis953@gmail.com
+2023-04-17 04:26:39,501 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:26:39,508 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:26:39,512 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:26:40,755 - kanban_board_info - INFO - Client tried to log in with email: fernando.luis953@gmail.com
+2023-04-17 04:26:40,849 - kanban_board_info - INFO - User successfully log in with email: fernando.luis953@gmail.com
+2023-04-17 04:30:57,966 - kanban_board_info - INFO - Client tried to log in with email: fernando.luis953@gmail.com
+2023-04-17 04:30:58,113 - kanban_board_info - INFO - User successfully log in with email: fernando.luis953@gmail.com
+2023-04-17 04:40:23,135 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:40:23,145 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:40:23,154 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:41:53,242 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:41:53,250 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:41:53,252 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:42:20,256 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:42:20,261 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:42:20,264 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:42:34,908 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:42:34,915 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:42:34,928 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:42:55,736 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:42:55,742 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:42:55,744 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:43:20,549 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:43:20,556 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:43:20,558 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:43:35,188 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:43:35,194 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:43:35,196 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:43:37,509 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:43:37,514 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:43:37,516 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:44:01,359 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:44:01,366 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:44:01,369 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:44:18,019 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:44:18,026 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:44:18,028 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:44:23,489 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:44:23,495 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:44:23,497 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:44:37,143 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:44:37,151 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:44:37,153 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:44:47,746 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:44:47,752 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:44:47,754 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:45:26,908 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:45:26,915 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:45:26,928 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:45:38,510 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:45:38,515 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:45:38,518 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:45:52,064 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:45:52,071 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:45:52,075 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:45:56,494 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:45:56,499 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:45:56,501 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:57:35,557 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:57:35,565 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:57:35,585 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:58:44,316 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 04:58:44,325 - kanban_board_info - INFO - DB Initiated
+2023-04-17 04:58:44,327 - kanban_board_info - INFO - Tables created on DB
+2023-04-17 04:58:55,761 - kanban_board_info - INFO - Client tried to log in with email: fernando.luis953@gmail.com
+2023-04-17 04:58:55,881 - kanban_board_info - INFO - User registered with email: fernando.luis953@gmail.com
+2023-04-17 04:58:57,720 - kanban_board_info - INFO - Client tried to log in with email: fernando.luis953@gmail.com
+2023-04-17 04:58:57,847 - kanban_board_info - INFO - User successfully log in with email: fernando.luis953@gmail.com
+2023-04-17 05:01:47,314 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 05:01:47,322 - kanban_board_info - INFO - DB Initiated
+2023-04-17 05:01:47,337 - kanban_board_info - INFO - Tables created on DB
