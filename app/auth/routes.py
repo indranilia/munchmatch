@@ -1,4 +1,5 @@
 import jwt
+import functools
 
 from flask import render_template, request, make_response, redirect, url_for
 from uuid import uuid4
@@ -6,7 +7,6 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 from datetime import datetime, timedelta
 from config import Config
-
 from app.auth import bp
 from app.models.user import User
 from app.extensions import db, info_logger, error_logger
@@ -114,7 +114,7 @@ async def register():
                     f"Email sent to {newUserData['email']} for user verify their account")
 
                 # Sending verification email
-                await emailSender.sendEmail(newUserData['email'], 'Verify your account for Kanban Board',
+                await emailSender.sendEmail(newUserData['email'], 'Verify your account for Tinder For Food',
                                             'newUser', newUserData['name'],
                                             f"{request.url_root}auth/verify/{newUserData['uuid']}")
 
@@ -207,7 +207,7 @@ async def forgotPassword():
                     info_logger.info(
                         f"Forgot password message sent to email: {existingUser.email}")
                     # Sending verification email
-                    await emailSender.sendEmail(existingUser.email, 'Reset your Kanban Board password',
+                    await emailSender.sendEmail(existingUser.email, 'Reset your Tinder For Food password',
                                                 'forgotPassword', existingUser.name,
                                                 f"{request.url_root}auth/reset-password/{existingUser.uuid}")
 
@@ -265,7 +265,7 @@ def resetPassword(uuid):
                     userData['password'])
                 db.session.commit()
                 info_logger.info(
-                    f"User successully resey password with email: {existingUser.email}")
+                    f"User successully reset password with email: {existingUser.email}")
                 return make_response({"message": 'Password reset!'}, 204)
 
         except Exception as error:
