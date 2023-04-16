@@ -25,6 +25,7 @@ class User(db.Model):
     email = db.Column(db.String(150))
     password = db.Column(db.Text)
     verified = db.Column(db.Boolean, default=False)
+    #set default picture for user profile -- decide which format
     swipes = db.relationship('Swipe', backref='post')
 
     def __repr__(self):
