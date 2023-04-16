@@ -6,11 +6,7 @@ from app.auth import bp
 from app.models.meal import Meal
 from app.models.review import Review
 from werkzeug.exceptions import abort
-from auth import token_required
-
-
-
-
+from app.jwt import token_required
 
 @bp.route("/meal/<int:id>/", methods=["GET", "POST"])
 @token_required
@@ -60,9 +56,8 @@ def add_review():
         info_logger.info(f"Review view rendered")
         return render_template('./meal/reviews.html')   
 
-            
 
-@bp.route("/update_review/<string:uuid>", methods=["PATCH"])
+@bp.route("/update_review/<string:uuid>", methods=["GET", "PATCH"])
 @token_required
 def update_review(uuid):
 
