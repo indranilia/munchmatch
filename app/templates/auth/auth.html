@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="/static/css/auth.css"/>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<title>Authentication</title>
+</head>
+<body>
+<div class=navigation>  
+    <div class = menu>
+    <span  class="page">Swipe</span>
+    <span  class="page">My Account</span>
+    <span  class="page">My Preferences</span>
+    <span  class="page">My Munches</span>
+    <span  class="page">About us</span>
+</div>
+</div>
+<div class=visuals>
+    <div class="food"><span class="no"></span><span class="yes"></span></div>
+    <div class="text3">Get ready to meet your perfect match</div>
+</div>
+<div class="container">
+<form class = "form" id = "login">
+<div class="form__input-group">
+  <div class=text>Welcome back!</div>
+  <div class="form__message form__message--error"></div>
+    <div class="text1">Email address</div>
+    <input type="text" class="form__input">
+    <div class="text1">Password</div>
+    <input type="text" class="form__input">
+    <div class="form__input-error-message"></div>
+    <p class = "form_text">
+    <a class="form__link" href="/forgotPassword.html" id = "linkForgot">Forgot password?</a>
+    </p>
+    <button class ="form__button" type="submit">
+    <span  class="text2">Log In</span>
+  </button>
+  <div class="or"><span>or</span></div>
+  <div class="rectangle"></div>
+  <p class = "form__text">
+    <p class="form__text">
+      <button class = "sign_up_button" formaction="./" id = linkCreateAccount>
+        <span class = "text2">Sign up</span></button>
+    </p>
+  </div>
+</form>
+<form class = "form form--hidden" id = "createAccount">
+  <div class = "form__input-group">
+    <div class=text>Create an account!</div>
+    <div class="form__message form__message--error"></div>
+    <div class="text1">Username</div>
+    <input type="text" class="form__input">
+    <div class="text1">Email</div>
+    <input type="text" class="form__input">
+    <div class="text1">Password</div>
+    <input type="text" class="form__input">
+    <div class="text1">Confirm the password</div>
+    <input type="text" class="form__input">
+    <div class="form__input-error-message"></div>
+    <button class ="form__button" type="submit">
+    <span  class="text2">Register</span>
+    </button>
+    <p class="form__text">
+      <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+    </p>
+    </div>
+  </form>
+  <script src="/static/js/auth.js"></script>
+</div>
+</body>
+
+
