@@ -53,18 +53,19 @@ class Dish {
 
     function generateDollarSigns(price) {
       if (price <= 10) {
-        return '<span style="color: #C91818;">$</span>';
+        return '<span style="color:#000;">$</span>';
       } else if (price <= 15) {
-        return '<span style="color: #C91818;">$$</span>';
+        return '<span style="color:#000;">$$</span>';
       } else if (price <= 20) {
-        return '<span style="color: #C91818;">$$$</span>';
+        return '<span style="color:#000;">$$$</span>';
       } else {
-        return '<span style="color: #C91818;">$$$$</span>';
+        return '<span style="color:#000;">$$$$</span>';
       }
     }
 
     const name = document.createElement("div");
-    name.style.fontSize = "19px";
+    name.style.fontSize = "24px"
+    name.style.color = "black";
 
     name.innerHTML = `${this.name} ${generateDollarSigns(this.price)}`;
     nameAndPrice.append(name);
@@ -72,6 +73,7 @@ class Dish {
     const price = document.createElement("div");
     price.textContent = "$" + this.price;
     price.style.marginLeft = "auto";
+    price.style.color = "#c91818"
     nameAndPrice.append(price);
     infoContainer.append(nameAndPrice);
 
@@ -105,7 +107,7 @@ class Dish {
     mapsContainer.style.flexDirection = "column";
     mapsContainer.style.alignItems = "center";
 
-    const viewOnGoogleMapsButton = document.createElement("button");
+    const viewOnGoogleMapsButton = document.createElement("div");
     viewOnGoogleMapsButton.textContent = "View on Google Maps";
     viewOnGoogleMapsButton.classList.add("maps-button");
     viewOnGoogleMapsButton.addEventListener("click", () => {
