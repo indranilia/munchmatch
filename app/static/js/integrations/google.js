@@ -1,10 +1,16 @@
 import { get } from "../_api.js";
 
-export async function getImageFromGoogleImages(query) {
+export async function getImageFromGoogleImages(
+  query,
+  stopLoading = true,
+  createLoading = true
+) {
   const encodedQuery = encodeURIComponent(query);
   const response = await get(
     `https://customsearch.googleapis.com/customsearch/v1?key=AIzaSyBBUaCVVNYenmnVL6olLHUFT4A1kfpkd-I&cx=03118f9400a2e4171&q=${encodedQuery}&searchType=image`,
-    true
+    true,
+    stopLoading,
+    createLoading
   );
 
   const chosenImage = response.data.items

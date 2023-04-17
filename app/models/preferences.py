@@ -1,4 +1,7 @@
 from app.extensions import db
+from app.models.type import Type
+from app.models.preferences_type import preferences_type
+
 
 class Preferences(db.Model):
     """
@@ -9,12 +12,13 @@ class Preferences(db.Model):
     Methods:
         __repr__(): Returns a string representation of the Meal object.
     """
+
     id = db.Column(db.Integer, primary_key=True)
     uuid = db.Column(db.Text)
-    location = db.Column(db.String(150))
+    location = db.Column(db.String(150), default="")
     range = db.Column(db.Float)
-    diet = db.Column(db.String(150))
-    cuisine = db.Column(db.String(150))
+    user_id = db.Column(db.Integer, db.ForeignKey("user.id"))
+    cuisine = db.relationship("Type", secondary=preferences_type, backref="cuisines")
 
     def __repr__(self):
         """
@@ -23,4 +27,7 @@ class Preferences(db.Model):
         Returns:
             str: A string representation of the Meal object, including the Meal name.
         """
-        return f'<Meal "{self.name}">'
+        return f'<Preferences for user with id "{self.user_id}">'
+
+    def as_dict(self):
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}

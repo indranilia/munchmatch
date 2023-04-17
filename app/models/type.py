@@ -13,6 +13,7 @@ class Type(db.Model):
     Methods:
         __repr__(): Returns a string representation of the Type object.
     """
+
     id = db.Column(db.Integer, primary_key=True)
     uuid = db.Column(db.Text)
     name = db.Column(db.String(150))
@@ -25,3 +26,6 @@ class Type(db.Model):
             str: A string representation of the Type object, including the type name.
         """
         return f'<Type "{self.name}">'
+
+    def as_dict(self):
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}

@@ -1,7 +1,7 @@
 class Dish {
-  constructor({ picture, price, name, onDishLiked, onDishDisliked }) {
+  constructor({ picture, price, name, location, onDishLiked, onDishDisliked }) {
     this.picture = picture;
-    // this.location = location;
+    this.location = location;
     // this.rate = rate;
     this.price = price;
     this.name = name;
@@ -64,7 +64,7 @@ class Dish {
     }
 
     const name = document.createElement("div");
-    name.style.fontSize = "24px"
+    name.style.fontSize = "24px";
     name.style.color = "black";
 
     name.innerHTML = `${this.name} ${generateDollarSigns(this.price)}`;
@@ -73,17 +73,12 @@ class Dish {
     const price = document.createElement("div");
     price.textContent = "$" + this.price;
     price.style.marginLeft = "auto";
-    price.style.color = "#c91818"
+    price.style.color = "#c91818";
     nameAndPrice.append(price);
     infoContainer.append(nameAndPrice);
 
-    // const rateAndAddress = document.createElement('div');
-    // rateAndAddress.style.display = 'flex';
-    // rateAndAddress.style.flexDirection = 'row';
-    // rateAndAddress.style.alignItems = 'center';
-
-    // const rateContainer = document.createElement('div');
-    // rateContainer.classList.add('rate-container');
+    const rateAndAddress = document.createElement("div");
+    rateAndAddress.classList.add("rate-container");
 
     // const rate = document.createElement('div');
     // let stars = '';
@@ -95,11 +90,13 @@ class Dish {
 
     // rateAndAddress.append(rateContainer);
 
-    // const address = document.createElement('div');
-    // address.textContent = "📍 " + this.location;
-    // address.style.marginLeft = 'auto';
-    // rateAndAddress.append(address);
-    // infoContainer.append(rateAndAddress);
+    if (this.location) {
+      const address = document.createElement("div");
+      address.textContent = "📍 " + this.location;
+      address.style.marginLeft = "auto";
+      rateAndAddress.append(address);
+      infoContainer.append(rateAndAddress);
+    }
 
     // create the View on Google Maps button container
     const mapsContainer = document.createElement("div");
@@ -112,7 +109,7 @@ class Dish {
     viewOnGoogleMapsButton.classList.add("maps-button");
     viewOnGoogleMapsButton.addEventListener("click", () => {
       const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-        this.name
+        this.location || this.name
       )}`;
       window.open(mapsUrl, "_blank");
     });

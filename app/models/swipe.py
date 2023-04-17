@@ -19,7 +19,7 @@ class Swipe(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     uuid = db.Column(db.Text)
-    direction = db.Column(db.Integer)
+    direction = db.Column(db.Text)
     user_id = db.Column(db.Integer, db.ForeignKey("user.id"))
     meal_id = db.Column(db.Integer, db.ForeignKey("meal.id"))
 

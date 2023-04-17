@@ -1,6 +1,6 @@
 import jwt
 
-from flask import render_template, request, make_response, redirect, url_for
+from flask import render_template, request, make_response, redirect, url_for, jsonify
 from uuid import uuid4
 from werkzeug.security import generate_password_hash, check_password_hash
 
@@ -9,6 +9,7 @@ from config import Config
 
 from app.routes.auth import bp
 from app.models.user import User
+from app.models.preferences import Preferences
 from app.extensions import db, info_logger, error_logger
 from app.integrations import emailSender
 from config import Config
@@ -93,6 +94,12 @@ async def register():
             newUserData["password"] = generate_password_hash(newUserData["password"])
             user = User(**newUserData)
             db.session.add(user)
+            db.session.commit()
+
+            newPreferences = Preferences(
+                **{"uuid": str(uuid4()), "range": 2.5, "user_id": user.id}
+            )
+            db.session.add(newPreferences)
             db.session.commit()
 
             info_logger.info(f"User registered with email: {newUserData['email']}")

@@ -282,13 +282,10 @@ nav a:first-child {
 }
 
 .maps-button {
-  width: 50%;
   color: black;
   align-self: center;
   border: none;
   border-radius: 10px;
-  margin-top: 3%;
-  margin-left: 20%;
   color: #333;
   font-size: 16px;
 }
@@ -336,7 +333,6 @@ nav a:first-child {
 
 .dish {
   width: 100%;
-  height: 80%;
   position: absolute;
   border-radius: 45px;
   overflow: hidden;
@@ -346,13 +342,18 @@ nav a:first-child {
   cursor: pointer;
   user-select: none;
   transition: transform 0.5s;
-  margin-top: 3%;
+  padding: 2em 0;
 }
 
 .rate-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.rate-container div {
+  white-space: nowrap;
+  font-size: 0.6em;
 }
 
 .dish img {
@@ -372,18 +373,17 @@ nav a:first-child {
 }
 
 #swipe_forward {
-  color: #57B440;
+  color: #57b440;
   background-color: transparent;
 }
 
 #swipe_backward {
-  color: #F44336;
+  color: #f44336;
   background-color: transparent;
 }
 
 .img-container {
   height: 70%;
-  margin-top: 6%;
 }
 
 .new {
@@ -395,7 +395,7 @@ nav a:first-child {
 }
 
 .new_dish {
-  border: 1px solid #A5A5A5;
+  border: 1px solid #a5a5a5;
   outline: none;
   background: #e5e5e5;
   color: black;
@@ -408,7 +408,7 @@ nav a:first-child {
   height: 20%;
 }
 
-.new_dish:hover{
+.new_dish:hover {
   background-color: #a5a5a5;
 }
 
