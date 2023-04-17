@@ -26,6 +26,7 @@ class Meal(db.Model):
     price = db.Column(db.Float)
     picture = db.Column(db.Text)
     user_id = db.Column(db.Integer, db.ForeignKey("user.id"))
+    #location = #google map link
     types = db.relationship("Type", secondary=meal_type, backref="posts")
     reviews = db.relationship("Review", backref="post")
 
