@@ -18,15 +18,13 @@ class User(db.Model):
     Methods:
         __repr__(): Returns a string representation of the User object.
     """
+
     id = db.Column(db.Integer, primary_key=True)
     uuid = db.Column(db.Text)
     name = db.Column(db.String(150))
-    gender = db.Column(db.Integer)
     email = db.Column(db.String(150))
     password = db.Column(db.Text)
-    verified = db.Column(db.Boolean, default=False)
-    #set default picture for user profile -- decide which format
-    swipes = db.relationship('Swipe', backref='post')
+    swipes = db.relationship("Swipe", backref="post")
 
     def __repr__(self):
         """
@@ -36,3 +34,6 @@ class User(db.Model):
             str: A string representation of the User object, including the user name.
         """
         return f'<User "{self.name}">'
+
+    def as_dict(self):
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}

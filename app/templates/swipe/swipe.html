@@ -1,0 +1,15 @@
+{% extends "base_dashboard.html" %} {% block title %} Swipe Page {% endblock %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href="/static/css/swipe.css" /> {%
+endblock %} {% block content %}
+<div class="swiper-container">
+  <ion-icon id="swipe_forward" name="checkmark-circle-outline"></ion-icon>
+  <div id="swipper"></div>
+  <ion-icon id="swipe_backward" name="close-circle-outline"></ion-icon>
+</div>
+<script src="/static/js/swipe/dish.js"></script>
+<script src="/static/js/swipe/script.js" type="module"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+{% endblock %}

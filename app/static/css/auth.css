@@ -1,182 +1,202 @@
-* {
-    font-family: 'Poppins';
+.auth-block {
+  display: flex;
+  align-items: stretch;
+  align-content: center;
+  justify-content: flex-start;
+  flex: 1;
 }
 
-body {
-    overflow: auto;
-	height: 100%;
-}
-
-.navigation {
-	width: 100%;
-	background-color: #C91818;
-}
-
-.menu {
-    top:44px;
-}
 .page {
   color: white;
   font-size: 30px;
   margin-left: 5%;
 }
 
-.form {
-    width: 50%;
-    float: right;
-    top: 20px;
+.form-title {
+  color: #c91818;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
 }
 
-.text { 
-	color: #C91818;
-	width: 100%;
-	height: 53px;
-	font-family: Poppins;
-	text-align: left;
-	font-size: 45px;
+.form-title.register-title {
+  margin-bottom: 0;
+}
+
+.form {
+  width: 65%;
+}
+
+.form,
+.form__input-group {
+  display: flex;
+  align-items: stretch;
+  align-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .form--hidden {
-	display: none;
+  display: none;
 }
 
+.form__input,
+.sign_up_button,
+.form__button {
+  border-radius: 10px;
+  padding: 1.2em;
+  border: 1px #a5a5a5 solid;
+}
 
-.form__button { 
-	width:557px;
-	height:65px;
-  	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
- 	background-color: rgba(235.0000011920929, 83.00000265240669, 83.00000265240669, 1);
-  	border: 1px;
-	border-style: ridge;
-	margin-top: 2%;
+.form__button,
+.sign_up_button {
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.form__button:hover,
+.sign_up_button:hover {
+  opacity: 0.8;
+}
+
+.form__button {
+  background-color: rgb(235, 83, 83);
+}
+
+.form__button.register-button {
+  margin-top: 3em;
 }
 
 .sign_up_button {
-	width: 557px;
-	height: 65px;
-  	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-  	background-color: #A5A5A5;
-  	border: 1px;
- }
- 
-.text2 { 
-	width: 53px;
-	height: 27px;
-	left: 252px;
-	top: 19px;
-	font-family: Poppins;
-	text-align: center;
-	font-size: 18px;
-	letter-spacing:0;
-  	color: white;
+  background-color: #a5a5a5;
 }
 
-.form__input {
-	width: 557px;
-	height: 65px;
-	top:34px;
-	border-top-left-radius:10px;
-	border-top-right-radius:10px;
-	border-bottom-left-radius:10px;
-	border-bottom-right-radius:10px;
-	border: 1px;
-	border-color: #A5A5A5;
-	border-style: ridge;
+.text2 {
+  width: 53px;
+  height: 27px;
+  left: 252px;
+  top: 19px;
+
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0;
+  color: white;
 }
 
-.text1 { 
-	color:rgba(0, 0, 0, 1);
-	height: 27px;
-	font-family: Poppins;
-	text-align: left;
-	font-size: 18px;
-	padding-top: 2%;
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: center;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.input-field span {
+  font-size: 0.8rem;
+  margin-bottom: 0.4em;
 }
 
 .form__link {
-	color: #A5A5A5;
-	width: 161px;
-	height: 27px;
-	font-family: Poppins;
-	font-size: 18px;
+  color: #a5a5a5;
+  font-size: 0.8em;
 }
 
 .or {
-   width: 557px; 
-   text-align: center; 
-   border-bottom: 1px solid #A5A5A5; 
-   line-height: 0.1em;
-   margin: 10px 0 20px; 
-} 
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0.3em 0;
+}
+
+.or div {
+  background-color: black;
+  height: 1px;
+  flex: 1;
+}
 
 .or span {
-    background:#fff;
-    padding:0 10px;
-    color: black;
+  margin: 0 1em;
 }
 
 .visuals {
-    background-color: #F2CF53;
-    width: 40%;
-    float: left;
-    top: 40px;
+  background-color: #f2cf53;
+  flex: 35;
 }
 
-
-.food { 
-	width: 90%;
-	height: 350px;
-	margin-left: 5%;
-	border-top-left-radius:90px;
-	border-top-right-radius:90px;
-	border-bottom-left-radius:90px;
-	border-bottom-right-radius:90px;
-	background-image:url(food.jpg);
-    margin-top: 25%;
+.food {
+  width: 90%;
+  height: 350px;
+  margin-left: 5%;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+  background-image: url(food.jpg);
+  margin-top: 25%;
 }
 
-
-.no { 
-	width:100px;
-	height:100px;
-	left:22%;
-	top:60%;
-	border-top-left-radius:360px;
-	border-top-right-radius:360px;
-	border-bottom-left-radius:360px;
-	border-bottom-right-radius:360px;
-	background-image:url(x.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-    color: #A5A5A5;
+.no {
+  width: 100px;
+  height: 100px;
+  left: 22%;
+  top: 60%;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  border-bottom-left-radius: 360px;
+  border-bottom-right-radius: 360px;
+  background-image: url(x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #a5a5a5;
 }
 
-.yes { 
-	width:100px;
-	height:100px;
-	left:8%;
-	top:60%;
-	border-top-left-radius:360px;
-	border-top-right-radius:360px;
-	border-bottom-left-radius:360px;
-	border-bottom-right-radius:360px;
-	background-image:url(check.png);
-	background-repeat:no-repeat;
-	background-size:cover;
+.yes {
+  width: 100px;
+  height: 100px;
+  left: 8%;
+  top: 60%;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  border-bottom-left-radius: 360px;
+  border-bottom-right-radius: 360px;
+  background-image: url(check.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.text3 { 
-	color:rgba(51.00000075995922, 51.00000075995922, 51.00000075995922, 1);
-	font-family:Poppins;
-	text-align:center;
-	letter-spacing:0;
-    font-size: 35px;
-    width: 100%;
-    top: 75%;
-    background-color: #F2CF53;
+.text3 {
+  color: rgba(51.00000075995922, 51.00000075995922, 51.00000075995922, 1);
+  text-align: center;
+  letter-spacing: 0;
+  font-size: 35px;
+  width: 100%;
+  top: 75%;
+  background-color: #f2cf53;
+}
+
+.container {
+  flex: 65;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.form__message--error {
+  font-size: 0.8em;
+  color: red;
+}
+
+.form__message--error.text-hidden {
+  color: transparent;
 }
