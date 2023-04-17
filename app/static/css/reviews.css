@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+html, body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    background: white;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    background: #F2CF53;
+    padding: 20px 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .post {
+    display: none;
+}
+
+.container .text {
+    font-size: 24px;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container .edit {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.container .edit:hover {
+   text-decoration: underline; 
+}
+
+.container .review input{
+    display: none;
+}
+
+.review label{
+    font-size: 40px;
+    color: #e8bcbc;
+    padding: 10px;
+    float: right;
+    text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;    ;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+    color: #C91818;
+}
+
+input:checked ~label{
+    color: #C91818;
+    text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+input#rate-5:checked ~label{
+    color: #e8bcbc;
+    text-shadow: 0 0 1px #C91818;
+}
+
+input#rate-1:checked ~ form header:before{
+    content: "This dish was very bad 😠";
+}
+
+input#rate-2:checked ~ form header:before{
+    content: "This dish was meh 😕";
+}
+
+input#rate-3:checked ~ form header:before{
+    content: "This dish was okay 🙂";
+}
+
+input#rate-4:checked ~ form header:before{
+    content: "This dish was good 😋";
+}
+
+input#rate-5:checked ~ form header:before{
+    content: "This dish was great! 🤩";
+}
+
+.container form {
+    display: none;
+}
+
+input:checked ~form{
+    display: block;
+}
+
+form header {
+    width: 100%;
+    font-size: 24px;
+    color: #333333;
+    font-weight: 500;
+    margin: 20px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease; 
+}
+
+
+form .textarea {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid #666666;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #666666;
+    resize: none;
+}
+
+form .rate {
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+form .rate button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #A5A5A5;
+    outline: none;
+    background: #EB5353;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form .rate button:hover {
+    background: #C91818;
+}

@@ -92,4 +92,8 @@ def create_app(config_class=Config):
 
     flaskApp.register_blueprint(preferences_bp, url_prefix="/preferences/")
 
+    from app.routes.meal import bp as meal_bp
+
+    flaskApp.register_blueprint(meal_bp, url_prefix="/meal/")
+
     return flaskApp

@@ -1,35 +1,27 @@
-from flask import request, make_response
+from flask import render_template, request, make_response, redirect, url_for
 from uuid import uuid4
-from app.extensions import db, error_logger
-from app.routes.auth import bp
+from datetime import datetime
+from app.extensions import db, info_logger, error_logger
+from app.routes.meal import bp
 from app.models.meal import Meal
+from app.models.review import Review
+from werkzeug.exceptions import abort
 from app.jwt import token_required
 
-@bp.route("/add_meal/", methods=["POST"])
+
+@bp.route("/", methods=["POST"])
 @token_required
-def add_meal():
-    """
-    Adding a meal
-    Parameters
-    -----------
-    
-    Returns
-    -----------
-    Added meal
-    """
+def add_meal(user):
     try:
+        newData = request.get_json()
+        newData["uuid"] = str(uuid4())
+        newData["user_id"] = user.id
 
-        newMeal = request.get_json()
-        newMeal['uuid'] = str(uuid4())
+        newMeal = Meal(**newData)
+        db.session.add(newMeal)
+        db.session.commit()
 
-        existingMeal = Meal.query\
-            .filter_by(id=newMeal['id'])\
-            .first()
-        
-        if not existingMeal:
-            meal = Meal(**newMeal)
-            db.session.add(meal)
-            db.session.commit()
+        return make_response({"message": "Meal created successfully!"}, 201)
     except Exception as error:
-        error_logger.error(f"Error on adding a meal")
+        error_logger.error(f"Error on adding meal")
         return make_response({"message": error}, 500)

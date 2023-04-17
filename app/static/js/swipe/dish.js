@@ -1,7 +1,7 @@
 class Dish {
-  constructor({ picture, price, name, onDishLiked, onDishDisliked }) {
+  constructor({ picture, price, name, location, onDishLiked, onDishDisliked }) {
     this.picture = picture;
-    // this.location = location;
+    this.location = location;
     // this.rate = rate;
     this.price = price;
     this.name = name;
@@ -53,18 +53,19 @@ class Dish {
 
     function generateDollarSigns(price) {
       if (price <= 10) {
-        return '<span style="color: #C91818;">$</span>';
+        return '<span style="color:#000;">$</span>';
       } else if (price <= 15) {
-        return '<span style="color: #C91818;">$$</span>';
+        return '<span style="color:#000;">$$</span>';
       } else if (price <= 20) {
-        return '<span style="color: #C91818;">$$$</span>';
+        return '<span style="color:#000;">$$$</span>';
       } else {
-        return '<span style="color: #C91818;">$$$$</span>';
+        return '<span style="color:#000;">$$$$</span>';
       }
     }
 
     const name = document.createElement("div");
-    name.style.fontSize = "19px";
+    name.style.fontSize = "24px";
+    name.style.color = "black";
 
     name.innerHTML = `${this.name} ${generateDollarSigns(this.price)}`;
     nameAndPrice.append(name);
@@ -72,16 +73,12 @@ class Dish {
     const price = document.createElement("div");
     price.textContent = "$" + this.price;
     price.style.marginLeft = "auto";
+    price.style.color = "#c91818";
     nameAndPrice.append(price);
     infoContainer.append(nameAndPrice);
 
-    // const rateAndAddress = document.createElement('div');
-    // rateAndAddress.style.display = 'flex';
-    // rateAndAddress.style.flexDirection = 'row';
-    // rateAndAddress.style.alignItems = 'center';
-
-    // const rateContainer = document.createElement('div');
-    // rateContainer.classList.add('rate-container');
+    const rateAndAddress = document.createElement("div");
+    rateAndAddress.classList.add("rate-container");
 
     // const rate = document.createElement('div');
     // let stars = '';
@@ -93,11 +90,12 @@ class Dish {
 
     // rateAndAddress.append(rateContainer);
 
-    // const address = document.createElement('div');
-    // address.textContent = "📍 " + this.location;
-    // address.style.marginLeft = 'auto';
-    // rateAndAddress.append(address);
-    // infoContainer.append(rateAndAddress);
+    if (this.location) {
+      const address = document.createElement("div");
+      address.textContent = "📍 " + this.location;
+      rateAndAddress.append(address);
+      infoContainer.append(rateAndAddress);
+    }
 
     // create the View on Google Maps button container
     const mapsContainer = document.createElement("div");
@@ -105,12 +103,12 @@ class Dish {
     mapsContainer.style.flexDirection = "column";
     mapsContainer.style.alignItems = "center";
 
-    const viewOnGoogleMapsButton = document.createElement("button");
+    const viewOnGoogleMapsButton = document.createElement("div");
     viewOnGoogleMapsButton.textContent = "View on Google Maps";
     viewOnGoogleMapsButton.classList.add("maps-button");
     viewOnGoogleMapsButton.addEventListener("click", () => {
       const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-        this.name
+        this.location || this.name
       )}`;
       window.open(mapsUrl, "_blank");
     });
