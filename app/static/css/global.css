@@ -1,10 +1,21 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 html,
 body,
 main {
   margin: 0;
   height: 100%;
   width: 100%;
-  font-family: "Montserrat", sans-serif !important;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: center;
+  justify-content: flex-start;
 }
 
 .modal-container {
@@ -72,7 +83,6 @@ textarea {
   font-size: 0.9rem;
   border: 1px solid black;
   resize: none;
-  font-family: "Montserrat", sans-serif !important;
 }
 
 .modal-container .modal .inputs input:focus,
