@@ -50,8 +50,15 @@ dishes = [
 @bp.route("/")
 @token_required
 def index(user):
-    mealsExist = len(Meal.query.all())
-    if not mealsExist:
+    query = (
+        Meal.query.filter(
+            Meal.id.notin_(db.session.query(Swipe.meal_id).filter_by(user_id=user.id))
+        )
+        .limit(3)
+        .all()
+    )
+
+    if len(query) == 0:
         for dish in dishes:
             newMeal = Meal(**dish)
             db.session.add(newMeal)
@@ -64,6 +71,14 @@ def index(user):
 @bp.route("meals")
 @token_required
 def getMeals(user):
+    query = (
+        Meal.query.filter(
+            Meal.id.notin_(db.session.query(Swipe.meal_id).filter_by(user_id=user.id))
+        )
+        .limit(3)
+        .all()
+    )
+
     query = (
         Meal.query.filter(
             Meal.id.notin_(db.session.query(Swipe.meal_id).filter_by(user_id=user.id))
@@ -104,6 +119,21 @@ def swipe(user, uuid, direction):
 
     # Redirect to the previous page
     # Get three random meals that are not in the swipe table yet
+    query = (
+        Meal.query.filter(
+            Meal.id.notin_(db.session.query(Swipe.meal_id).filter_by(user_id=user.id))
+        )
+        .limit(3)
+        .all()
+    )
+
+    if len(query) == 0:
+        for dish in dishes:
+            newMeal = Meal(**dish)
+            db.session.add(newMeal)
+
+        db.session.commit()
+
     query = (
         Meal.query.filter(
             Meal.id.notin_(db.session.query(Swipe.meal_id).filter_by(user_id=user.id))
