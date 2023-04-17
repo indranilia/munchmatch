@@ -93,7 +93,6 @@ class Dish {
     if (this.location) {
       const address = document.createElement("div");
       address.textContent = "📍 " + this.location;
-      address.style.marginLeft = "auto";
       rateAndAddress.append(address);
       infoContainer.append(rateAndAddress);
     }
