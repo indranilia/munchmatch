@@ -2,7 +2,7 @@ import { post, get } from "../_api.js";
 import { getImageFromGoogleImages } from "../integrations/google.js";
 
 // DOM
-const swiper = document.getElementById("swiper");
+const swipper = document.getElementById("swipper");
 const swipe_forward = document.getElementById("swipe_forward");
 const swipe_backward = document.getElementById("swipe_backward");
 
@@ -10,7 +10,6 @@ let meals = [];
 
 const getInitialDishes = async () => {
   const response = await get(`/swipe/meals`);
-  console.log(response);
   meals = response.data.data;
   for (const dish of response.data.data) {
     createDish(dish);
@@ -35,11 +34,11 @@ async function createDish(newDish) {
       getNextMeal(newDish.uuid, "left");
     },
   });
-  swiper.appendChild(dish.element);
+  swipper.appendChild(dish.element);
 }
 
 function updateDishes() {
-  const dishes = swiper.querySelectorAll(".dish:not(.dismissing)");
+  const dishes = swipper.querySelectorAll(".dish:not(.dismissing)");
   dishes.forEach((dish, index) => {
     dish.style.setProperty("--i", index);
   });

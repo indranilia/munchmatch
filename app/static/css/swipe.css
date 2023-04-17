@@ -296,7 +296,7 @@ nav a:first-child {
   height: 100%;
 }
 
-#swiper {
+#swipper {
   height: 80vh;
   aspect-ratio: 1;
   perspective: 500px;
