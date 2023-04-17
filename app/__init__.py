@@ -7,6 +7,7 @@ from app.models.type import Type
 from app.models.meal import Meal
 from app.models.review import Review
 from app.models.swipe import Swipe
+from app.models.preferences import Preferences
 
 
 def create_app(config_class=Config):
@@ -35,7 +36,7 @@ def create_app(config_class=Config):
 
     # Creating a function that will add types for food if it's empty
     def add_types():
-        if not Type.query().first():
+        if not Type.query.first():
             italian = Type(uuid=str(uuid4()), name="Italian")
             db.session.add(italian)
             chinese = Type(uuid=str(uuid4()), name="Chinese")
@@ -71,6 +72,9 @@ def create_app(config_class=Config):
         db.create_all()
         info_logger.info("Tables created on DB")
 
+    with flaskApp.app_context():
+        add_types()
+
     # Registering blueprints
     @flaskApp.errorhandler(404)
     def notFound(e):
@@ -83,5 +87,9 @@ def create_app(config_class=Config):
     from app.routes.swipe import bp as swipe_bp
 
     flaskApp.register_blueprint(swipe_bp, url_prefix="/swipe/")
+
+    from app.routes.preferences import bp as preferences_bp
+
+    flaskApp.register_blueprint(preferences_bp, url_prefix="/preferences/")
 
     return flaskApp
