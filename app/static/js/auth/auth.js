@@ -1,22 +1,11 @@
-const inputBoxes = document.getElementsByClassName("input-box");
+import { showLogin, showRegister } from "./authHelper.js";
 
-const notificationModalContainer = document.getElementById(
-  "notification-modal-container"
-);
+document.querySelector("#linkCreateAccount").addEventListener("click", (e) => {
+  e.preventDefault();
+  showRegister();
+});
 
-for (const inputBox of inputBoxes) {
-  const input = inputBox.getElementsByTagName("input")[0];
-  input.addEventListener("input", (event) => {
-    if (event.target.value) {
-      inputBox.classList.add("active");
-    } else {
-      inputBox.classList.remove("active");
-    }
-  });
-}
-
-if (notificationModalContainer) {
-  notificationModalContainer.addEventListener("click", () => {
-    window.location.href = `/auth/login`;
-  });
-}
+document.querySelector("#linkLogin").addEventListener("click", (e) => {
+  e.preventDefault();
+  showLogin();
+});
