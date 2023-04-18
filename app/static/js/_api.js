@@ -1,8 +1,14 @@
 import { createLoading, removeLoading } from "./_helper.js";
 
-export async function post(url, body, fullPath = false, stopLoading = true) {
+export async function post(
+  url,
+  body,
+  fullPath = false,
+  stopLoading = true,
+  loading = true
+) {
   try {
-    createLoading();
+    if (loading) createLoading();
     const newUrl = fullPath ? url : `${window.location.origin}${url}`;
     const query = await fetch(newUrl, {
       method: "POST",
@@ -23,9 +29,14 @@ export async function post(url, body, fullPath = false, stopLoading = true) {
   }
 }
 
-export async function get(url, fullPath = false, stopLoading = true) {
+export async function get(
+  url,
+  fullPath = false,
+  stopLoading = true,
+  loading = true
+) {
   try {
-    createLoading();
+    if (loading) createLoading();
     const newUrl = fullPath ? url : `${window.location.origin}${url}`;
     const query = await fetch(newUrl, {
       method: "GET",
@@ -45,9 +56,15 @@ export async function get(url, fullPath = false, stopLoading = true) {
   }
 }
 
-export async function patch(url, body, fullPath = false, stopLoading = true) {
+export async function patch(
+  url,
+  body,
+  fullPath = false,
+  stopLoading = true,
+  loading = true
+) {
   try {
-    createLoading();
+    if (loading) createLoading();
     const newUrl = fullPath ? url : `${window.location.origin}${url}`;
     const query = await fetch(newUrl, {
       method: "PATCH",
@@ -67,9 +84,15 @@ export async function patch(url, body, fullPath = false, stopLoading = true) {
   }
 }
 
-export async function remove(url, item, fullPath = false, stopLoading = true) {
+export async function remove(
+  url,
+  item,
+  fullPath = false,
+  stopLoading = true,
+  loading = true
+) {
   try {
-    createLoading();
+    if (loading) createLoading();
     const newUrl = fullPath ? url : `${window.location.origin}${url}`;
     const query = await fetch(`${newUrl}/${item}`, {
       method: "DELETE",

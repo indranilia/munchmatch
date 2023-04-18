@@ -1,10 +1,21 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 html,
 body,
 main {
   margin: 0;
   height: 100%;
   width: 100%;
-  font-family: "Montserrat", sans-serif !important;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: center;
+  justify-content: flex-start;
 }
 
 .modal-container {
@@ -37,7 +48,7 @@ main {
   padding: 2em 3em;
   border-radius: 10px;
   gap: 1em;
-  width: 30%;
+  width: 45%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -72,7 +83,6 @@ textarea {
   font-size: 0.9rem;
   border: 1px solid black;
   resize: none;
-  font-family: "Montserrat", sans-serif !important;
 }
 
 .modal-container .modal .inputs input:focus,
@@ -161,4 +171,12 @@ textarea:focus {
   100% {
     opacity: 0;
   }
+}
+
+.colored-toast.swal2-icon-success {
+  background-color: #a5dc86 !important;
+}
+
+.colored-toast.swal2-icon-error {
+  background-color: #f27474 !important;
 }

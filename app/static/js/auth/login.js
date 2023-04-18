@@ -1,9 +1,10 @@
 // Imports
 import { post } from "../_api.js";
-import { getFormData } from "../_helper.js";
+import { getFormData, removeLoading } from "../_helper.js";
+import { setFormMessage } from "./authHelper.js";
 
 // Get login form from the DOM
-const loginForm = document.getElementById("login-form");
+const loginForm = document.getElementById("login");
 
 loginForm.addEventListener("submit", async (event) => {
   // If the try doesn't pass, the user didn't fill all the information
@@ -15,13 +16,14 @@ loginForm.addEventListener("submit", async (event) => {
     const { status, data } = await post("/auth/login", obj, undefined, false);
 
     if (status === 200) {
-      window.location.href = "/home";
+      window.location.href = "/swipe";
       return;
     }
 
-    const message = encodeURIComponent(data.message);
-    window.location.href = `/auth/login?message=${message}`;
+    setFormMessage(loginForm, "error", data.message);
+    removeLoading();
   } catch (error) {
-    window.location.href = `/auth/login?message=${error.message}`;
+    setFormMessage(loginForm, "error", error.message);
+    removeLoading();
   }
 });

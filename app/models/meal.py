@@ -19,14 +19,17 @@ class Meal(db.Model):
     Methods:
         __repr__(): Returns a string representation of the Meal object.
     """
+
     id = db.Column(db.Integer, primary_key=True)
     uuid = db.Column(db.Text)
     name = db.Column(db.String(150))
     price = db.Column(db.Float)
     picture = db.Column(db.Text)
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-    types = db.relationship('Type', secondary=meal_type, backref='posts')
-    reviews = db.relationship('Review', backref='post')
+    location = db.Column(db.Text)
+    user_id = db.Column(db.Integer, db.ForeignKey("user.id"))
+    #location = #google map link
+    types = db.relationship("Type", secondary=meal_type, backref="posts")
+    reviews = db.relationship("Review", backref="post")
 
     def __repr__(self):
         """
@@ -36,3 +39,6 @@ class Meal(db.Model):
             str: A string representation of the Meal object, including the Meal name.
         """
         return f'<Meal "{self.name}">'
+
+    def as_dict(self):
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}

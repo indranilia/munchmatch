@@ -1,60 +1,68 @@
+import { patch } from "../_api.js";
+import { errorToast, successToast } from "../integrations/sweetAlert.js";
+
 // Get the elements that we need to manipulate
-const pictureContainer = document.querySelector(".picture-container");
-const usernameSpan = document.querySelector("#username");
-const nameSpan = document.querySelector("#name");
-const emailSpan = document.querySelector("#email");
-const editForm = document.querySelector("#edit-form");
-const editValueInput = document.querySelector("#edit-value");
+const nameEditButton = document.querySelector("#edit-name-button");
+const emailEditButton = document.querySelector("#edit-email-button");
+const nameEditInput = document.querySelector("#edit-name-input");
+const emailEditInput = document.querySelector("#edit-email-input");
+const nameValue = document.querySelector("#name-value");
+const emailValue = document.querySelector("#email-value");
+const mainNameValue = document.querySelector("#main-name-value");
+const mainEmailValue = document.querySelector("#main-email-value");
 
-// Define a function that will be called when the "Edit" button is clicked
-function editField(fieldName) {
-  // Show the edit form and set its value to the current value of the field
-  editForm.style.display = "block";
-  switch (fieldName) {
-    case "picture":
-      editValueInput.value = pictureContainer.querySelector("img").getAttribute("src");
-      break;
-    case "username":
-      editValueInput.value = usernameSpan.textContent;
-      break;
-    case "name":
-      editValueInput.value = nameSpan.textContent;
-      break;
-    case "email":
-      editValueInput.value = emailSpan.textContent;
-      break;
+const saveSettings = async (body) => {
+  if (body.email && body.name) {
+    try {
+      const status = await patch("/account", body);
+
+      if (status === 204) {
+        successToast("Account updated successfully!");
+        return true;
+      }
+
+      errorToast("Something went wrong. Please try again");
+      return false;
+    } catch (error) {
+      errorToast(error.message);
+      return false;
+    }
+  } else {
+    errorToast("Please fill the email and password");
+    return false;
   }
-}
+};
 
-// Define a function that will be called when the "Cancel" button is clicked
-function cancelEdit() {
-  // Hide the edit form and clear its value
-  editForm.style.display = "none";
-  editValueInput.value = "";
-}
-
-// Define a function that will be called when the "Save" button is clicked
-function submitEdit() {
-  // Get the current value of the input field
-  const newValue = editValueInput.value;
-
-  // Determine which field we are editing based on the ID of the input field
-  switch (editValueInput.id) {
-    case "edit-value-picture":
-      pictureContainer.querySelector("img").setAttribute("src", newValue);
-      break;
-    case "edit-value-username":
-      usernameSpan.textContent = newValue;
-      break;
-    case "edit-value-name":
-      nameSpan.textContent = newValue;
-      break;
-    case "edit-value-email":
-      emailSpan.textContent = newValue;
-      break;
+nameEditButton.addEventListener("click", () => {
+  if (nameEditButton.innerHTML === "Edit") {
+    nameEditInput.classList.remove("hidden");
+    nameValue.classList.add("hidden");
+    nameEditButton.innerHTML = "Save";
+  } else {
+    if (
+      saveSettings({ email: emailEditInput.value, name: nameEditInput.value })
+    ) {
+      nameValue.innerHTML = mainNameValue.innerHTML = nameEditInput.value;
+      nameEditInput.classList.add("hidden");
+      nameValue.classList.remove("hidden");
+      nameEditButton.innerHTML = "Edit";
+    }
   }
+});
 
-  // Hide the edit form and clear its value
-  editForm.style.display = "none";
-  editValueInput.value = "";
-}
+emailEditButton.addEventListener("click", () => {
+  if (emailEditButton.innerHTML === "Edit") {
+    emailEditInput.classList.remove("hidden");
+    emailValue.classList.add("hidden");
+    emailEditButton.innerHTML = "Save";
+  } else {
+    if (
+      saveSettings({ email: emailEditInput.value, name: nameEditInput.value })
+    ) {
+      emailValue.innerHTML = mainEmailValue.innerHTML = emailEditInput.value;
+      emailEditInput.classList.add("hidden");
+      emailValue.classList.remove("hidden");
+      emailEditButton.innerHTML = "Edit";
+    }
+  }
+});
