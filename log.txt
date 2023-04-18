@@ -1,0 +1,234 @@
+2023-04-18 18:22:29,107 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 18:22:29,179 - munch_match_info - INFO - DB Initiated
+2023-04-18 18:22:29,195 - munch_match_info - INFO - Tables created on DB
+2023-04-18 18:22:53,104 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 18:22:53,111 - munch_match_info - INFO - DB Initiated
+2023-04-18 18:22:53,115 - munch_match_info - INFO - Tables created on DB
+2023-04-18 18:23:01,715 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 18:23:01,723 - munch_match_info - INFO - DB Initiated
+2023-04-18 18:23:01,736 - munch_match_info - INFO - Tables created on DB
+2023-04-18 18:51:22,866 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 18:51:22,875 - munch_match_info - INFO - DB Initiated
+2023-04-18 18:51:22,879 - munch_match_info - INFO - Tables created on DB
+2023-04-18 18:57:58,850 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 18:57:58,859 - munch_match_info - INFO - DB Initiated
+2023-04-18 18:57:58,865 - munch_match_info - INFO - Tables created on DB
+2023-04-18 18:58:05,601 - munch_match_info - INFO - User email update
+2023-04-18 18:58:05,601 - munch_match_error - ERROR - User with given email already exist
+2023-04-18 18:58:56,446 - munch_match_info - INFO - User email update
+2023-04-18 18:58:56,446 - munch_match_error - ERROR - User with given email already exist
+2023-04-18 18:59:06,251 - munch_match_info - INFO - User email update
+2023-04-18 18:59:06,251 - munch_match_error - ERROR - User with given email already exist
+2023-04-18 18:59:45,690 - munch_match_info - INFO - User email update
+2023-04-18 18:59:45,690 - munch_match_error - ERROR - User with given email already exist
+2023-04-18 18:59:58,485 - munch_match_info - INFO - User email update
+2023-04-18 18:59:58,486 - munch_match_error - ERROR - User with given email already exist
+2023-04-18 19:00:11,815 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 19:00:11,824 - munch_match_info - INFO - DB Initiated
+2023-04-18 19:00:11,828 - munch_match_info - INFO - Tables created on DB
+2023-04-18 19:00:15,005 - munch_match_info - INFO - User email update
+2023-04-18 19:00:15,005 - munch_match_error - ERROR - User with given email already exist
+2023-04-18 19:00:40,726 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 19:00:40,732 - munch_match_info - INFO - DB Initiated
+2023-04-18 19:00:40,735 - munch_match_info - INFO - Tables created on DB
+2023-04-18 19:00:45,054 - munch_match_info - INFO - User email update
+2023-04-18 19:00:45,054 - munch_match_error - ERROR - User with given email already exist
+2023-04-18 19:01:35,542 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 19:01:35,549 - munch_match_info - INFO - DB Initiated
+2023-04-18 19:01:35,553 - munch_match_info - INFO - Tables created on DB
+2023-04-18 19:01:38,664 - munch_match_info - INFO - User email update
+2023-04-18 19:01:38,665 - munch_match_error - ERROR - User with given email already exist
+2023-04-18 19:01:52,258 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 19:01:52,264 - munch_match_info - INFO - DB Initiated
+2023-04-18 19:01:52,266 - munch_match_info - INFO - Tables created on DB
+2023-04-18 19:02:10,039 - munch_match_info - INFO - User email update
+2023-04-18 19:02:10,039 - munch_match_error - ERROR - User with given email already exist
+2023-04-18 19:02:27,420 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 19:02:27,429 - munch_match_info - INFO - DB Initiated
+2023-04-18 19:02:27,432 - munch_match_info - INFO - Tables created on DB
+2023-04-18 19:02:38,404 - munch_match_info - INFO - User email update
+2023-04-18 19:02:38,414 - munch_match_info - INFO - Account updated successfully!
+2023-04-18 19:02:52,726 - munch_match_info - INFO - User email update
+2023-04-18 19:02:52,733 - munch_match_info - INFO - Account updated successfully!
+2023-04-18 19:03:56,378 - munch_match_info - INFO - User email update
+2023-04-18 19:03:56,390 - munch_match_info - INFO - Account updated successfully!
+2023-04-18 19:04:24,142 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 19:04:24,151 - munch_match_info - INFO - DB Initiated
+2023-04-18 19:04:24,165 - munch_match_info - INFO - Tables created on DB
+2023-04-18 19:07:57,640 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 19:07:57,646 - munch_match_info - INFO - DB Initiated
+2023-04-18 19:07:57,650 - munch_match_info - INFO - Tables created on DB
+2023-04-18 19:09:29,718 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 19:09:29,727 - munch_match_info - INFO - DB Initiated
+2023-04-18 19:09:29,735 - munch_match_info - INFO - Tables created on DB
+2023-04-18 19:10:22,092 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 19:10:22,099 - munch_match_info - INFO - DB Initiated
+2023-04-18 19:10:22,101 - munch_match_info - INFO - Tables created on DB
+2023-04-18 19:10:33,670 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 19:10:33,676 - munch_match_info - INFO - DB Initiated
+2023-04-18 19:10:33,693 - munch_match_info - INFO - Tables created on DB
+2023-04-18 19:10:57,504 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 19:10:57,512 - munch_match_info - INFO - DB Initiated
+2023-04-18 19:10:57,514 - munch_match_info - INFO - Tables created on DB
+2023-04-18 19:11:01,911 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 19:11:01,916 - munch_match_info - INFO - DB Initiated
+2023-04-18 19:11:01,919 - munch_match_info - INFO - Tables created on DB
+2023-04-18 19:11:09,367 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 19:11:09,372 - munch_match_info - INFO - DB Initiated
+2023-04-18 19:11:09,375 - munch_match_info - INFO - Tables created on DB
+2023-04-18 19:11:15,817 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 19:11:15,823 - munch_match_info - INFO - DB Initiated
+2023-04-18 19:11:15,825 - munch_match_info - INFO - Tables created on DB
+2023-04-18 19:11:23,257 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 19:11:23,262 - munch_match_info - INFO - DB Initiated
+2023-04-18 19:11:23,265 - munch_match_info - INFO - Tables created on DB
+2023-04-18 19:13:01,243 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 19:13:01,251 - munch_match_info - INFO - DB Initiated
+2023-04-18 19:13:01,257 - munch_match_info - INFO - Tables created on DB
+2023-04-18 19:13:09,354 - munch_match_info - INFO - Client tried to log in with email: fernando.luis953@gmail.com
+2023-04-18 19:13:09,473 - munch_match_info - INFO - User registered with email: fernando.luis953@gmail.com
+2023-04-18 19:13:10,504 - munch_match_info - INFO - Client tried to log in with email: fernando.luis953@gmail.com
+2023-04-18 19:13:10,616 - munch_match_info - INFO - User successfully log in with email: fernando.luis953@gmail.com
+2023-04-18 19:14:10,403 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 19:14:10,409 - munch_match_info - INFO - DB Initiated
+2023-04-18 19:14:10,412 - munch_match_info - INFO - Tables created on DB
+2023-04-18 23:45:53,617 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 23:45:53,626 - munch_match_info - INFO - DB Initiated
+2023-04-18 23:45:53,633 - munch_match_info - INFO - Tables created on DB
+2023-04-18 23:47:06,360 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 23:47:06,368 - munch_match_info - INFO - DB Initiated
+2023-04-18 23:47:06,375 - munch_match_info - INFO - Tables created on DB
+2023-04-18 23:47:12,896 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 23:47:12,902 - munch_match_info - INFO - DB Initiated
+2023-04-18 23:47:12,904 - munch_match_info - INFO - Tables created on DB
+2023-04-18 23:47:19,352 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 23:47:19,358 - munch_match_info - INFO - DB Initiated
+2023-04-18 23:47:19,361 - munch_match_info - INFO - Tables created on DB
+2023-04-18 23:54:52,140 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-18 23:54:52,149 - munch_match_info - INFO - DB Initiated
+2023-04-18 23:54:52,162 - munch_match_info - INFO - Tables created on DB
+2023-04-18 23:56:06,260 - munch_match_info - INFO - Client tried to log in with email: fernando.luis953@gmail.com
+2023-04-18 23:56:06,367 - munch_match_info - INFO - User successfully log in with email: fernando.luis953@gmail.com
+2023-04-19 00:15:40,623 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 00:15:40,638 - munch_match_info - INFO - DB Initiated
+2023-04-19 00:15:40,643 - munch_match_info - INFO - Tables created on DB
+2023-04-19 00:15:56,481 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 00:15:56,491 - munch_match_info - INFO - DB Initiated
+2023-04-19 00:15:56,495 - munch_match_info - INFO - Tables created on DB
+2023-04-19 00:16:10,241 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 00:16:10,247 - munch_match_info - INFO - DB Initiated
+2023-04-19 00:16:10,251 - munch_match_info - INFO - Tables created on DB
+2023-04-19 00:17:30,772 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 00:17:30,782 - munch_match_info - INFO - DB Initiated
+2023-04-19 00:17:30,787 - munch_match_info - INFO - Tables created on DB
+2023-04-19 00:18:03,850 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 00:18:03,866 - munch_match_info - INFO - DB Initiated
+2023-04-19 00:18:03,881 - munch_match_info - INFO - Tables created on DB
+2023-04-19 00:19:08,438 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 00:19:08,446 - munch_match_info - INFO - DB Initiated
+2023-04-19 00:19:08,448 - munch_match_info - INFO - Tables created on DB
+2023-04-19 00:20:21,537 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 00:20:21,553 - munch_match_info - INFO - DB Initiated
+2023-04-19 00:20:21,561 - munch_match_info - INFO - Tables created on DB
+2023-04-19 00:21:44,287 - munch_match_error - ERROR - Error on adding meal
+2023-04-19 00:22:02,904 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 00:22:02,912 - munch_match_info - INFO - DB Initiated
+2023-04-19 00:22:02,917 - munch_match_info - INFO - Tables created on DB
+2023-04-19 00:22:05,787 - munch_match_error - ERROR - Error on adding meal
+2023-04-19 00:22:19,621 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 00:22:19,628 - munch_match_info - INFO - DB Initiated
+2023-04-19 00:22:19,642 - munch_match_info - INFO - Tables created on DB
+2023-04-19 00:36:39,775 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 00:36:39,784 - munch_match_info - INFO - DB Initiated
+2023-04-19 00:36:39,787 - munch_match_info - INFO - Tables created on DB
+2023-04-19 00:36:43,152 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 00:36:43,156 - munch_match_info - INFO - DB Initiated
+2023-04-19 00:36:43,159 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:01:33,427 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:01:33,435 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:01:33,439 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:04:01,274 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:04:01,283 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:04:01,288 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:04:12,851 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:04:12,857 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:04:12,859 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:04:22,393 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:04:22,399 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:04:22,402 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:04:50,416 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:04:50,436 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:04:50,449 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:07:11,290 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:07:11,298 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:07:11,301 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:07:15,747 - munch_match_error - ERROR - Error on adding review
+2023-04-19 01:07:27,145 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:07:27,151 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:07:27,154 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:07:29,996 - munch_match_error - ERROR - Error on adding review
+2023-04-19 01:08:55,594 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:08:55,601 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:08:55,604 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:10:12,684 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:10:12,692 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:10:12,694 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:10:35,483 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:10:35,490 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:10:35,492 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:11:20,843 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:11:20,851 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:11:20,854 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:16:02,657 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:16:02,665 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:16:02,668 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:16:16,568 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:16:16,577 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:16:16,581 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:18:36,314 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:18:36,322 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:18:36,325 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:19:10,491 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:19:10,499 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:19:10,512 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:19:33,485 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:19:33,493 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:19:33,496 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:19:45,119 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:19:45,126 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:19:45,129 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:20:00,902 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:20:00,908 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:20:00,921 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:20:37,994 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:20:38,001 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:20:38,004 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:21:50,576 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:21:50,584 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:21:50,587 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:28:53,977 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:28:53,988 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:28:54,003 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:30:25,062 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:30:25,072 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:30:25,076 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:32:31,034 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:32:31,043 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:32:31,056 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:32:39,585 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:32:39,596 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:32:39,615 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:32:44,193 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:32:44,199 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:32:44,202 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:35:39,122 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:35:39,130 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:35:39,144 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:35:42,188 - munch_match_error - ERROR - Error on adding review
+2023-04-19 01:36:06,288 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:36:06,293 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:36:06,296 - munch_match_info - INFO - Tables created on DB
+2023-04-19 01:39:44,550 - munch_match_error - ERROR - Error on adding meal
+2023-04-19 01:40:02,249 - munch_match_info - INFO - File log for Tinder for Food opened
+2023-04-19 01:40:02,258 - munch_match_info - INFO - DB Initiated
+2023-04-19 01:40:02,262 - munch_match_info - INFO - Tables created on DB

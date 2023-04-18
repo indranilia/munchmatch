@@ -43,6 +43,7 @@ def token_required(f):
             # JWT is passed in the request header
             if getCookie("user_uuid"):
                 token = getCookie("user_uuid")
+                print(token)
             else:
                 return redirect("/auth")
         except:

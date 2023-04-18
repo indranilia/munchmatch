@@ -25,6 +25,7 @@ class Meal(db.Model):
     name = db.Column(db.String(150))
     price = db.Column(db.Float)
     picture = db.Column(db.Text)
+    location = db.Column(db.Text)
     user_id = db.Column(db.Integer, db.ForeignKey("user.id"))
     types = db.relationship("Type", secondary=meal_type, backref="posts")
     reviews = db.relationship("Review", backref="post")

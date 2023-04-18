@@ -161,3 +161,4 @@ cython_debug/
 
 /log.txt
 /log-test.txt
+/app.db
