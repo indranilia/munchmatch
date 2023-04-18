@@ -2,7 +2,6 @@ from app.extensions import db
 from datetime import datetime
 
 
-
 class Review(db.Model):
     """
     A class representing a review in the tinder for food app.
@@ -18,12 +17,12 @@ class Review(db.Model):
     Methods:
         __repr__(): Returns a string representation of the Review object.
     """
+
     id = db.Column(db.Integer, primary_key=True)
     uuid = db.Column(db.Text)
     rating = db.Column(db.Integer)
-    description = db.Column(db.String)
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-    meal_id = db.Column(db.Integer, db.ForeignKey('meal.id'))
+    user_id = db.Column(db.Integer, db.ForeignKey("user.id"))
+    meal_id = db.Column(db.Integer, db.ForeignKey("meal.id"))
     date = db.Column(db.DateTime, default=datetime.utcnow)
 
     def __repr__(self):
@@ -34,3 +33,6 @@ class Review(db.Model):
             str: A string representation of the Review object, including the review uuid.
         """
         return f'<Review "{self.uuid}">'
+
+    def as_dict(self):
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}

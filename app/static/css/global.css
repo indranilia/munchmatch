@@ -16,6 +16,7 @@ body {
   align-items: stretch;
   align-content: center;
   justify-content: flex-start;
+  overflow: hidden;
 }
 
 .modal-container {

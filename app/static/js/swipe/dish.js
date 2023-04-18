@@ -1,8 +1,16 @@
 class Dish {
-  constructor({ picture, price, name, location, onDishLiked, onDishDisliked }) {
+  constructor({
+    picture,
+    price,
+    name,
+    rate,
+    location,
+    onDishLiked,
+    onDishDisliked,
+  }) {
     this.picture = picture;
     this.location = location;
-    // this.rate = rate;
+    this.rate = rate;
     this.price = price;
     this.name = name;
     // this.ingredients = ingredients;
@@ -80,15 +88,19 @@ class Dish {
     const rateAndAddress = document.createElement("div");
     rateAndAddress.classList.add("rate-container");
 
-    // const rate = document.createElement('div');
-    // let stars = '';
-    // for (let i = 0; i < this.rate; i++) {
-    // stars += '★';
-    // }
-    // rate.textContent = this.rate + " : " + stars + "(" + this.reviews + ")";
-    // rateContainer.append(rate);
+    const rate = document.createElement("div");
+    rate.classList.add("rating");
+    let stars = "";
+    if (this.rate) {
+      for (let i = 0; i < this.rate; i++) {
+        stars += "★";
+      }
+    } else {
+      stars = "No reviews yet";
+    }
 
-    // rateAndAddress.append(rateContainer);
+    rate.textContent = stars;
+    rateAndAddress.append(rate);
 
     if (this.location) {
       const address = document.createElement("div");

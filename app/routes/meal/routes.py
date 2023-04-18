@@ -20,8 +20,14 @@ def add_meal(user):
         newMeal = Meal(**newData)
         db.session.add(newMeal)
         db.session.commit()
+        newMeal = newMeal.as_dict()
 
-        return make_response({"message": "Meal created successfully!"}, 201)
+        reviews = Review.query.filter(Review.meal_id == newMeal["id"]).all()
+        newMeal["rate"] = int(sum([review.as_dict()["rating"] for review in reviews]))
+
+        return make_response(
+            {"message": "Meal created successfully!", "newMeal": newMeal}, 201
+        )
     except Exception as error:
         error_logger.error(f"Error on adding meal")
         return make_response({"message": error}, 500)

@@ -100,4 +100,12 @@ def create_app(config_class=Config):
 
     flaskApp.register_blueprint(account_bp, url_prefix="/account/")
 
+    from app.routes.munches import bp as munches_bp
+
+    flaskApp.register_blueprint(munches_bp, url_prefix="/munches/")
+
+    from app.routes.review import bp as review_bp
+
+    flaskApp.register_blueprint(review_bp, url_prefix="/review/")
+
     return flaskApp

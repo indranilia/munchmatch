@@ -4,6 +4,7 @@ from uuid import uuid4
 from app.routes.swipe import bp
 from app.models.swipe import Swipe
 from app.models.meal import Meal
+from app.models.review import Review
 from app.extensions import db
 from app.jwt import token_required
 
@@ -26,6 +27,10 @@ def getMeals(user):
     )
 
     meals = [meal.as_dict() for meal in query]
+
+    for meal in meals:
+        reviews = Review.query.filter(Review.meal_id == meal["id"]).all()
+        meal["rate"] = int(sum([review.as_dict()["rating"] for review in reviews]))
 
     return make_response(
         {"message": "Meals retrieved successfully", "data": meals}, 200
