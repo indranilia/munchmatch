@@ -50545,3 +50545,9 @@
 2023-04-01 15:51:19,064 - kanban_board_info - INFO - Register view rendered
 2023-04-01 15:51:31,652 - kanban_board_info - INFO - Login view rendered without message
 2023-04-01 15:51:41,445 - kanban_board_info - INFO - Forgot Password view rendered without message
+2023-04-17 20:35:37,117 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-17 20:35:37,150 - kanban_board_info - INFO - DB Initiated
+2023-04-17 20:35:38,488 - kanban_board_info - INFO - Tables created on DB
+2023-04-18 01:03:42,339 - kanban_board_info - INFO - File log for Tinder for Food opened
+2023-04-18 01:03:42,383 - kanban_board_info - INFO - DB Initiated
+2023-04-18 01:03:48,741 - kanban_board_info - INFO - Tables created on DB

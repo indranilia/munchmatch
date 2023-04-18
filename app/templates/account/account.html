@@ -1,0 +1,70 @@
+{% extends "base_dashboard.html" %} 
+{% block title %} My Account {% endblock %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href="/static/css/account.css" /> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .account-container {
+        border-bottom: 1px solid red;
+        padding-bottom: 20px;
+      }
+      .picture-container {
+        border-bottom: 1px solid red;
+        padding-bottom: 20px;
+      }
+    </style>
+  </head>
+{% endblock %} 
+{% block content %}
+<div class="account-main-container">
+  <div class="account-container">
+    <h2>Account Information</h2>
+
+    <div>
+        <div class="picture-container">
+          <img src="{{ picture }}" alt="User Picture">
+          <button onclick="editField('picture')">Change Photo</button>
+        </div>
+      </div>
+    
+          <div>
+            <label for="username">Username:</label>
+            <span id="username">{{ username }}</span>
+            <button onclick="editField('username')">Edit</button>
+          </div>
+          <div>
+            <div style="margin-top: 20px; border-top: 1px solid red;"></div>
+            <label for="name">Name:</label>
+            <span id="name">{{ name }}</span>
+            <button onclick="editField('name')">Edit</button>
+          </div>
+          <div>
+            <div style="margin-top: 20px; border-top: 1px solid red;"></div>
+            <label for="email">Email:</label>
+            <span id="email">{{ email }}</span>
+            <button onclick="editField('email')">Edit</button>
+          </div>
+      </div>
+  </div>
+      
+<div id="edit-form" style="display: none;">
+  <h2>Edit Account Information</h2>
+  <form>
+    <label for="edit-value">New Value:</label>
+    <input type="text" id="edit-value">
+    <button onclick="submitEdit()">Save</button>
+    <button onclick="cancelEdit()">Cancel</button>
+  </form>
+</div>
+    
+<script src="/static/js/account/account.js" type="module"></script>
+{% endblock %}

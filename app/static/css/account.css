@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .account-container {
+    border-bottom: 1px solid red;
+    padding-bottom: 20px;
+  }
+  
+  .picture-container {
+    border-bottom: 1px solid red;
+    padding-bottom: 20px;
+  }
+  
+  .account-main-container {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 20px;
+  }
+  
+  span {
+    display: inline-block;
+    width: 200px;
+  }
+  
+  button {
+    margin-left: 20px;
+  }
+  
+  #edit-form {
+    margin-top: 20px;
+  }
+  
+  #edit-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #edit-form input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #edit-form button {
+    margin-right: 10px;
+  }
+  
