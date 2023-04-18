@@ -1,0 +1,24 @@
+{% extends "base_dashboard.html" %} {% block title %} Swipe Page {% endblock %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href="/static/css/munches.css" /> {%
+endblock %} 
+{% block content %}
+
+<h2>Your Munch Matches</h2>
+
+
+{% for match in matches %}
+  <div class="matched_dish" style="background-color: #F2CF53">
+    <div class="img-container">
+      <img src="{{ match.image_url }}" alt="{{ match.name }}" />
+    </div>
+    <div class="info">
+      <h3>{{ match.name }}</h3>
+      <p>{{ match.price }}</p>
+      <button class="review-btn">Add a Review</button>
+      <button class="delete-btn">Delete</button>
+    </div>
+  </div>
+{% endfor %}
+
+{% endblock %}
