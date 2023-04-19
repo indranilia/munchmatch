@@ -42,7 +42,9 @@ class Config:
     # Set the connection URI for the database
     # SQLALCHEMY_DATABASE_URI = f"mysql://{db_user}:{db_pass}@{db_host}:{db_port}/{db_name}"\
     #     or 'sqlite:///' + os.path.join(basedir, 'app.db')
-    SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, "app.db")
+    SQLALCHEMY_DATABASE_URI = (
+        "postgresql://tinder_for_food_user:tinder_for_food_password@db/tinder_for_food"
+    )
 
     # Enable tracking modifications to the database
     SQLALCHEMY_TRACK_MODIFICATIONS = True
