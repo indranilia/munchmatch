@@ -33,7 +33,27 @@
 
 The `.env.example` contains all the environment variables you need to run this program. Simply copy all the content from it and paste in a new file called `.env` in the root of the app (same level as the app folder and the `.env.example` file).
 
-## Virtual Environment and run the app
+## Docker and run the app
+Create the Docker network:
+
+    $ docker network create -d bridge tinder-for-food-bridge-network
+
+Then, create the Docker image for the flask app:
+
+    $ docker build -t tinder-for-food:latest .
+
+Add the container to Docker from docker-compose.yml:
+
+    $ docker stack deploy -c docker-compose.yml tinder-for-food
+
+To see the app, visit http://localhost:5001
+
+When you are done, remove the containers from Docker:
+
+    $ docker stack rm tinder-for-food
+
+## To run the unit tests, create the virtual environment and activate it:
+
 Create the virtualenv:
 
     $ virtualenv -p python3 venv
@@ -54,15 +74,7 @@ Install dependencies in virtual environment:
 
     $ pip3 install -r requirements.txt
 
-To set the FLASK_APP varibale:
-
-    $ export FLASK_APP=app
-
-To start the server:
-
-	$ python3 -m flask run
-
-To run the unit tests:
+Run the unit tests:
 
 	$ python3 -m unittest discovery app/tests
 

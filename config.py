@@ -30,15 +30,6 @@ class Config:
     - LOG_FILE_NAME: Log file name
     """
 
-    # Get the database credentials from environment variables
-    db_user = env["DATABASE_USERNAME"]
-    db_pass = urllib.parse.quote(
-        env["DATABASE_PASSWORD"] if env["DATABASE_PASSWORD"] else ""
-    )
-    db_host = env["DATABASE_HOST"]
-    db_port = env["DATABASE_PORT"]
-    db_name = env["DATABASE_NAME"]
-
     # Set the connection URI for the database
     # SQLALCHEMY_DATABASE_URI = f"mysql://{db_user}:{db_pass}@{db_host}:{db_port}/{db_name}"\
     #     or 'sqlite:///' + os.path.join(basedir, 'app.db')
