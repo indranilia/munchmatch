@@ -10,6 +10,19 @@ from app.jwt import token_required
 @bp.route("/")
 @token_required
 def get_account(user):
+    """
+    A route function that renders the account page for the logged-in user.
+
+    Parameters:
+    ---------------
+    user: 
+        User object representing the logged-in user.
+
+    Returns:
+    -----------------
+    account.html:
+        A Flask HTTP response containing the rendered HTML template for the account page.
+    """
     return render_template("/account/account.html", user=user)
 
 
@@ -17,6 +30,20 @@ def get_account(user):
 @bp.route("/", methods=["PATCH"])
 @token_required
 def change_values(user):
+    """
+    A route function that handles a PATCH request to update the user's account information.
+
+    Parameters:
+    ---------------
+    user: 
+         User object representing the logged-in user.
+
+    Returns:
+    ---------------
+    message:
+        A Flask HTTP response indicating success or failure of the account update.
+
+    """
     try:
         reviewData = request.get_json()
 

@@ -6,6 +6,7 @@ const container = document.querySelector(".container")
 btn.onclick = () => {
     review.style.display = "none";
     post.style.display = "block";
+    // Add a click event listener to the edit element
     edit.onclick = () => {
         review.style.display = "block";
         post.style.display = "none";

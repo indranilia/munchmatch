@@ -5,6 +5,7 @@ import { errorToast, successToast } from "../integrations/sweetAlert.js";
 const munchImages = document.getElementsByClassName("munch-image");
 const munches = document.getElementsByClassName("matched_dish");
 
+// Load the images for matches using Google Images API
 const loadMatchesImages = async () => {
   for (const image of munchImages) {
     if (image.getAttribute("src") === "None") {
@@ -18,8 +19,10 @@ const loadMatchesImages = async () => {
   }
 };
 
+//Load the munches and attach event listeners to their delete buttons
 const loadMunches = async () => {
   for (const munch of munches) {
+    // Loop through all the elements within class "matched_dish"
     const deleteButton = munch.querySelector(".delete-btn");
     deleteButton.addEventListener("click", async () => {
       try {
@@ -30,6 +33,7 @@ const loadMunches = async () => {
           undefined,
           false
         );
+        // If the status is 204 (No Content), remove the current munch element and display a success message
         if (status === 204) {
           munch.remove();
           successToast("Munch deleted successfully");

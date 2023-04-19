@@ -11,16 +11,21 @@ const emailValue = document.querySelector("#email-value");
 const mainNameValue = document.querySelector("#main-name-value");
 const mainEmailValue = document.querySelector("#main-email-value");
 
+
+// Function to save account settings
 const saveSettings = async (body) => {
   if (body.email && body.name) {
     try {
+      // Send a PATCH request to update the account details
       const status = await patch("/account", body);
 
+      // If the request is successful, show a success message and return true
       if (status === 204) {
         successToast("Account updated successfully!");
         return true;
       }
 
+      // If the request fails, show an error message and return false
       errorToast("Something went wrong. Please try again");
       return false;
     } catch (error) {
@@ -28,11 +33,13 @@ const saveSettings = async (body) => {
       return false;
     }
   } else {
+    // If email and name are not present in the input object, show an error message 
     errorToast("Please fill the email and password");
     return false;
   }
 };
 
+// Event listener for editing the name
 nameEditButton.addEventListener("click", () => {
   if (nameEditButton.innerHTML === "Edit") {
     nameEditInput.classList.remove("hidden");
@@ -50,6 +57,7 @@ nameEditButton.addEventListener("click", () => {
   }
 });
 
+// Event listener for editing the email
 emailEditButton.addEventListener("click", () => {
   if (emailEditButton.innerHTML === "Edit") {
     emailEditInput.classList.remove("hidden");
@@ -59,6 +67,7 @@ emailEditButton.addEventListener("click", () => {
     if (
       saveSettings({ email: emailEditInput.value, name: nameEditInput.value })
     ) {
+      // If the saveSettings function returns true, update the email values in the display and hide the edit input
       emailValue.innerHTML = mainEmailValue.innerHTML = emailEditInput.value;
       emailEditInput.classList.add("hidden");
       emailValue.classList.remove("hidden");

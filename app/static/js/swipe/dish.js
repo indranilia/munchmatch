@@ -13,18 +13,19 @@ class Dish {
     this.rate = rate;
     this.price = price;
     this.name = name;
-    // this.ingredients = ingredients;
-    // this.reviews = reviews;
     this.onDishLiked = onDishLiked;
     this.onDishDisliked = onDishDisliked;
+    // Call private initialization method
     this.#init();
   }
 
+  // Private properties
   #startPoint;
   #offsetX;
   #offsetY;
 
-  #isTouchDevice = () => {
+   // Private method to detect touch capability
+  #hasTouchCapability = () => {
     return (
       "ontouchstart" in window ||
       navigator.maxTouchPoints > 0 ||
@@ -32,6 +33,7 @@ class Dish {
     );
   };
 
+  // Private method to initialize the Dish element
   #init = () => {
     const dish = document.createElement("div");
     dish.classList.add("dish");
@@ -48,9 +50,9 @@ class Dish {
     imgContainer.append(img);
     dish.append(imgContainer);
 
+
     const infoContainer = document.createElement("div");
     infoContainer.classList.add("info-container");
-    // infoContainer.style.display = 'flex';
     infoContainer.style.flexDirection = "row";
     infoContainer.style.alignItems = "center";
     infoContainer.style.justifyContent = "space-between";
@@ -59,6 +61,7 @@ class Dish {
     nameAndPrice.style.display = "flex";
     nameAndPrice.style.flexDirection = "row";
 
+    // Function to generate dollar signs based on price
     function generateDollarSigns(price) {
       if (price <= 10) {
         return '<span style="color:#000;">$</span>';
@@ -71,13 +74,14 @@ class Dish {
       }
     }
 
+    // Create the name element and set its properties
     const name = document.createElement("div");
     name.style.fontSize = "24px";
     name.style.color = "black";
-
     name.innerHTML = `${this.name} ${generateDollarSigns(this.price)}`;
     nameAndPrice.append(name);
 
+    // Create the price element and set its properties
     const price = document.createElement("div");
     price.textContent = "$" + this.price;
     price.style.marginLeft = "auto";
@@ -85,9 +89,11 @@ class Dish {
     nameAndPrice.append(price);
     infoContainer.append(nameAndPrice);
 
+    // Create the rate and address container and set its properties
     const rateAndAddress = document.createElement("div");
     rateAndAddress.classList.add("rate-container");
 
+    // Create the rate element and set its properties to make it shown using stars
     const rate = document.createElement("div");
     rate.classList.add("rating");
     let stars = "";
@@ -109,12 +115,13 @@ class Dish {
       infoContainer.append(rateAndAddress);
     }
 
-    // create the View on Google Maps button container
+    // Create the View on Google Maps button container
     const mapsContainer = document.createElement("div");
     mapsContainer.style.display = "flex";
     mapsContainer.style.flexDirection = "column";
     mapsContainer.style.alignItems = "center";
 
+    // Create the View on Google Maps button and set its text content that will redirect that user to Google Maps
     const viewOnGoogleMapsButton = document.createElement("div");
     viewOnGoogleMapsButton.textContent = "View on Google Maps";
     viewOnGoogleMapsButton.classList.add("maps-button");
@@ -126,141 +133,132 @@ class Dish {
     });
     mapsContainer.append(viewOnGoogleMapsButton);
 
-    // const ingredientsButton = document.createElement('button');
-    // ingredientsButton.classList.add('ingredients-button');
-    // ingredientsButton.addEventListener('click', () => {
-    //   if (ingredientsContainer.style.display === 'none') {
-    //     ingredientsContainer.style.display = 'block';
-    //     ingredientsContainer.style.background = 'white';
-    //     ingredientsContainer.style.borderRadius = '20px';
-    //     imgContainer.style.display = 'none';
-    //     infoContainer.style.display = 'none';
-    //   } else {
-    //     ingredientsContainer.style.display = 'none';
-    //     imgContainer.style.display = 'block';
-    //     infoContainer.style.display = 'block';
-    //   }
-    // });
-
-    // const ingredientsContainer = document.createElement('div');
-    // ingredientsContainer.classList.add('ingredients-container');
-    // ingredientsContainer.style.display = 'none';
-
-    // const ingredientsTitle = document.createElement('div');
-    // ingredientsTitle.textContent = 'Ingredients 🧑‍🍳';
-    // ingredientsTitle.style.fontStyle = 'italic';
-    // ingredientsContainer.append(ingredientsTitle);
-
-    // const ingredientsList = document.createElement('div');
-    // const ingredientsText = document.createTextNode(`${this.ingredients.join(', ')}`);
-    // ingredientsList.appendChild(ingredientsText);
-    // ingredientsContainer.append(ingredientsList);
-
     this.element = dish;
-    // dish.append(ingredientsButton);
-    // dish.append(ingredientsContainer);
+    // Append the info and maps containers to the dish container
     dish.append(infoContainer);
     dish.append(mapsContainer);
 
-    if (this.#isTouchDevice()) {
-      this.#listenToTouchEvents();
-    } else {
-      this.#listenToMouseEvents();
+    // Add either touch or mouse events based on the device's capabilities
+    if (this.#hasTouchCapability()) {
+      this.#TouchEvents();
+  } else {
+      this.#MouseEvents();
+  }
+}
+
+  // Event listeners for touch events
+  #TouchEvents = () => {
+    // Add touchstart event listener to the element
+    this.element.addEventListener('touchstart', ({ changedTouches }) => {
+      const { clientX, clientY } = changedTouches[0];
+      if (!changedTouches[0]) return;
+      this.#startPoint = { x: clientX, y: clientY }
+      // Add touchmove event listener to the document
+      document.addEventListener('touchmove', this.#handleTouchMove);
+      // Disable the transition effect
+      this.element.style.transition = 'transform 0s';
+    });
+
+    // Add touchend and cancel event listeners to the document
+    document.addEventListener('touchend', this.#handleTouchEnd);
+    document.addEventListener('cancel', this.#handleTouchEnd);
     }
-  };
 
-  #listenToTouchEvents = () => {
-    this.element.addEventListener("touchstart", (e) => {
-      const touch = e.changedTouches[0];
-      if (!touch) return;
-      const { clientX, clientY } = touch;
-      this.#startPoint = { x: clientX, y: clientY };
-      document.addEventListener("touchmove", this.#handleTouchMove);
-      this.element.style.transition = "transform 0s";
-    });
 
-    document.addEventListener("touchend", this.#handleTouchEnd);
-    document.addEventListener("cancel", this.#handleTouchEnd);
-  };
-
-  #listenToMouseEvents = () => {
-    this.element.addEventListener("mousedown", (e) => {
+  // Event listeners for mouse events
+  #MouseEvents = () => {
+    this.element.addEventListener('mousedown', (e) => {
       const { clientX, clientY } = e;
-      this.#startPoint = { x: clientX, y: clientY };
-      document.addEventListener("mousemove", this.#handleMouseMove);
-      this.element.style.transition = "transform 0s";
+      this.#startPoint = { x: clientX, y: clientY }
+      document.addEventListener('mousemove', this.#handleMouseMove);
+      this.element.style.transition = 'transform 0s';
     });
+    
+    document.addEventListener('mouseup', this.#handleMoveUp);
 
-    document.addEventListener("mouseup", this.#handleMoveUp);
-
-    // prevent card from being dragged
-    this.element.addEventListener("dragstart", (e) => {
+    // Add dragstart event listener to the element to prevent dragging
+    this.element.addEventListener('dragstart', (e) => {
       e.preventDefault();
     });
-  };
+    }
 
+
+  // Handle movement of the element
   #handleMove = (x, y) => {
+    // Calculate the offset between the starting point and the current point
     this.#offsetX = x - this.#startPoint.x;
     this.#offsetY = y - this.#startPoint.y;
-    const rotate = this.#offsetX * 0.1;
-    this.element.style.transform = `translate(${this.#offsetX}px, ${
-      this.#offsetY
-    }px) rotate(${rotate}deg)`;
-    // dismiss card
-    if (Math.abs(this.#offsetX) > this.element.clientWidth * 0.7) {
-      this.#dismiss(this.#offsetX > 0 ? 1 : -1);
+    // Calculate the rotation angle based on the offset
+    const rotate = this.#offsetX * 0.05;
+    this.element.style.transform = `translate(${this.#offsetX}px, ${this.#offsetY}px) rotate(${rotate}deg)`;
+    // Check if the element has been swiped past a certain threshold which is 60% of the width of the card
+    if (Math.abs(this.#offsetX) > this.element.clientWidth * 0.6) {
+      // Call the dismiss method with the appropriate direction (right or left)
+      if (this.#offsetX > 0) {
+        this.#dismiss(1);
+      } else {
+        this.#dismiss(-1);
+      }
     }
-  };
+    }
 
-  // mouse event handlers
+  // Event listener for mousemove event
   #handleMouseMove = (e) => {
     e.preventDefault();
     if (!this.#startPoint) return;
+    // Calculate the movement based on the current mouse position
     const { clientX, clientY } = e;
     this.#handleMove(clientX, clientY);
-  };
+    }
 
+  // Event listener for mouseup event
   #handleMoveUp = () => {
+    // Reset the starting point and remove the mousemove event listener
     this.#startPoint = null;
-    document.removeEventListener("mousemove", this.#handleMouseMove);
-    this.element.style.transform = "";
-  };
+    document.removeEventListener('mousemove', this.#handleMouseMove);
+    this.element.style.transform = '';
+    }
 
-  // touch event handlers
-  #handleTouchMove = (e) => {
+  // Event listener for touchmove event
+  #handleTouchMove = ({ changedTouches }) => {
     if (!this.#startPoint) return;
-    const touch = e.changedTouches[0];
+    const touch = changedTouches[0];
     if (!touch) return;
+    // Get the x and y coordinates of the touch point
     const { clientX, clientY } = touch;
+    // Call the handleMove function with the touch coordinates
     this.#handleMove(clientX, clientY);
-  };
+    }
 
+
+  // Event listener for touchend event
   #handleTouchEnd = () => {
     this.#startPoint = null;
-    document.removeEventListener("touchmove", this.#handleTouchMove);
-    this.element.style.transform = "";
-  };
+    this.element.removeEventListener('touchmove', this.#handleTouchMove);
+    this.element.style.transform = '';
+    };
 
+  // Function to dismiss the card in a certain direction
   #dismiss = (direction) => {
     this.#startPoint = null;
-    document.removeEventListener("mouseup", this.#handleMoveUp);
-    document.removeEventListener("mousemove", this.#handleMouseMove);
-    document.removeEventListener("touchend", this.#handleTouchEnd);
-    document.removeEventListener("touchmove", this.#handleTouchMove);
-    this.element.style.transition = "transform 1s";
-    this.element.style.transform = `translate(${
-      direction * window.innerWidth
-    }px, ${this.#offsetY}px) rotate(${90 * direction}deg)`;
-    this.element.classList.add("dismissing");
+    document.removeEventListener('mouseup', this.#handleMoveUp);
+    document.removeEventListener('mousemove', this.#handleMouseMove);
+    document.removeEventListener('touchend', this.#handleTouchEnd);
+    document.removeEventListener('touchmove', this.#handleTouchMove);
+    this.element.style.transition = 'transform 1s';
+    this.element.style.transform = `translate(${direction * window.innerWidth}px, ${this.#offsetY}px) rotate(${45 * direction}deg)`;
+    this.element.classList.add('dismissing');
+    // Remove the element from the DOM after 1 second
     setTimeout(() => {
       this.element.remove();
     }, 1000);
 
-    if (typeof this.onDishLiked === "function" && direction === 1) {
-      this.onDishLiked();
-    }
-    if (typeof this.onDishDisliked === "function" && direction === -1) {
-      this.onDishDisliked();
-    }
-  };
-}
+    this.onDishDismissed?.();
+    // Call the onDishLiked callback function with a boolean value indicating if the card was swiped to the right
+    this.onDishLiked?.(direction === 1);
+    // Call the onDishDisliked callback function with a boolean value indicating if the card was swiped to the left
+    this.onDishDisliked?.(direction === -1);
+    }}
+
+
+

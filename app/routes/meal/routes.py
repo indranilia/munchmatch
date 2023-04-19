@@ -12,6 +12,25 @@ from app.jwt import token_required
 @bp.route("/", methods=["POST"])
 @token_required
 def add_meal(user):
+    """
+    Route that allows a user to create a new meal
+
+    Parameters:
+    -----------
+    user: User
+        User object that is authenticated using the JWT token.
+
+    Returns:
+    --------
+    response: dict
+        A dictionary containing the message and the newly created meal if the operation was successful.
+ 
+    Raises:
+    -------
+    Exception:
+        If there is an error adding the meal to the database.
+
+    """
     try:
         newData = request.get_json()
         newData["uuid"] = str(uuid4())

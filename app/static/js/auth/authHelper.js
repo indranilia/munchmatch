@@ -1,3 +1,4 @@
+// This function sets a message in the specified form element based on the provided type and message
 export function setFormMessage(formElement, type, message) {
   const messageElement = formElement.querySelector(".form__message");
 
@@ -14,6 +15,7 @@ export function setFormMessage(formElement, type, message) {
   }, 3000);
 }
 
+// Shows the register form and hides the login form. 
 export function showRegister() {
   const loginForm = document.querySelector("#login");
   const createAccountForm = document.querySelector("#createAccount");
@@ -22,6 +24,7 @@ export function showRegister() {
   createAccountForm.classList.remove("form--hidden");
 }
 
+// Shows the login form and hides the register form. 
 export function showLogin() {
   const loginForm = document.querySelector("#login");
   const createAccountForm = document.querySelector("#createAccount");
