@@ -1,3 +1,4 @@
+//Displays a success modal with a "Success" title and the given text message
 export async function successModal(text, callback = () => {}) {
   Swal.fire({
     title: "Success",
@@ -8,6 +9,7 @@ export async function successModal(text, callback = () => {}) {
   }).then(callback);
 }
 
+// Displays an error modal with an "Error" title and the given text message
 export async function errorModal(
   text,
   callback = () => {},
@@ -23,6 +25,7 @@ export async function errorModal(
   }).then(callback);
 }
 
+// Displays a warning modal with a "Warning" title and the given text message
 export async function warningModal(text, callback = () => {}) {
   Swal.fire({
     title: "Warning",
@@ -33,6 +36,7 @@ export async function warningModal(text, callback = () => {}) {
   }).then(callback);
 }
 
+// Displays a success toast notification with the given text message.
 export async function successToast(text) {
   const Toast = Swal.mixin({
     toast: true,
@@ -51,6 +55,7 @@ export async function successToast(text) {
   });
 }
 
+// Displays an error toast notification with the given text message. 
 export async function errorToast(text) {
   const Toast = Swal.mixin({
     toast: true,

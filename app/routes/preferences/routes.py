@@ -12,7 +12,17 @@ from app.jwt import token_required
 @token_required
 def preferences(user):
     """
-    A route for preferences
+    Route function that helps display user preferences
+
+    Parameters:
+    -----------
+    user : User object
+        The authenticated user
+    
+    Returns:
+    -----------
+    prefhome.html
+        Renders the 'prefhome.html' template with the list of types available
     """
     types = Type.query.all()
     return render_template("./preferences/prefhome.html", types=types)
@@ -22,7 +32,17 @@ def preferences(user):
 @token_required
 def get_preferences(user):
     """
-    A route for preferences
+    Route function that helps to get the user's preferences
+
+    Parameters:
+    -----------
+    user : User object
+        The authenticated user
+
+    Returns:
+    --------
+    make_response : HTTP response object
+        Returns a JSON object containing the user's preferences.
     """
     try:
         query = Preferences.query.filter(Preferences.user_id == user.id).first()
@@ -57,14 +77,19 @@ def get_preferences(user):
 @token_required
 def update_preferences(user):
     """
-    Adding a review
-    Parameters
-    -----------
+    Route function that helps to update user preferences
 
-    Returns
+    Parameters:
     -----------
-    Added preferences
+    user : User object
+        The authenticated user
+
+    Returns:
+    --------
+    make_response : HTTP response object
+        Returns a JSON object confirming the update of user preferences
     """
+
     try:
         newData = request.get_json()
 
@@ -88,14 +113,19 @@ def update_preferences(user):
 @token_required
 def add_preferences_type(user):
     """
-    Adding a review
-    Parameters
-    -----------
+    Route function that helps adding user preferences type
 
-    Returns
+    Parameters:
     -----------
-    Added preferences
+    user : User object
+        The authenticated user
+
+    Returns:
+    --------
+    make_response : HTTP response object
+        Returns a JSON object confirming the addition of user preferences
     """
+
     try:
         newData = request.get_json()
 
@@ -135,13 +165,17 @@ def add_preferences_type(user):
 @token_required
 def remove_preferences_type(user):
     """
-    Adding a review
-    Parameters
-    -----------
+    Route that removes user preferences type
 
-    Returns
+    Parameters:
     -----------
-    Added preferences
+    user : User object
+        The authenticated user 
+
+    Returns:
+    --------
+    make_response : HTTP response object
+        Returns a JSON object confirming the removal of user preferences.
     """
     try:
         newData = request.get_json()

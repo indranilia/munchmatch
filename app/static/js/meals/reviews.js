@@ -10,19 +10,23 @@ const reviewModal = reviewModalContainer.getElementsByClassName("review")[0];
 
 let currentDishId = 0;
 
+// Looping through each 'addReviewButton' element and adding a click event listener to it
 for (const addReviewButton of addReviewButtons) {
   addReviewButton.addEventListener("click", () => {
     reviewModalContainer.classList.add("visible");
+    // Extracting the ID from the clicked 'addReviewButton' element
     const id = addReviewButton.id.match(/\d+/)[0];
     currentDishId = parseInt(id);
   });
 }
 
+// Adding a click event listener to the 'reviewSubmitButton' element
 reviewSubmitButton.addEventListener("click", async () => {
   for (const heart of hearts) {
     if (heart.checked) {
       try {
         const rating = heart.id.match(/\d+/)[0];
+         // Sending a POST request to the '/review' endpoint with the rating and current dish ID
         const { data, status } = await post(
           "/review",
           { rating, meal_id: currentDishId },
@@ -32,6 +36,7 @@ reviewSubmitButton.addEventListener("click", async () => {
         );
 
         if (status === 200) {
+          // Displaying a success toast message and updating the corresponding meal's rating
           successToast(data.message);
           const correspondingMeal = document.getElementById(
             data.newMeal.meal_id

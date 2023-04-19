@@ -13,13 +13,21 @@ from app.jwt import token_required
 @token_required
 def add_review(user):
     """
-    Adding a review
-    Parameters
-    -----------
+    Route that adds a review
 
-    Returns
+    Parameters:
     -----------
-    Added review
+    user: User object
+
+    Returns:
+    -----------
+    dict:
+        A dictionary containing the added review data
+        
+    Raises:
+    -------
+    Exception:
+        If an error occurs while adding the review, returns a 500 HTTP status code
     """
     try:
         newReview = request.get_json()
