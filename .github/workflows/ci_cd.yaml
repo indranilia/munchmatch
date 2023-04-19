@@ -28,7 +28,7 @@ jobs:
         run: |
           docker network create -d bridge tinder-for-food-bridge-network
           docker run --name=db --network=tinder-for-food-bridge-network -d --expose 5432 -p 5432:5432/tcp  -e "POSTGRES_DB=tinder_for_food" -e "POSTGRES_USER=tinder_for_food_user" -e "POSTGRES_PASSWORD=tinder_for_food_password" postgres:alpine
-          docker build -t tinder-for-food:latest web
+          docker build -t tinder-for-food:latest .
           while ! psql "dbname=tinder_for_food host=127.0.0.1 user=tinder_for_food_user password=tinder_for_food_password port=5432" -c 'SELECT 1'> /dev/null 2>&1; do
             echo 'Waiting for postgres...'
             sleep 1;
