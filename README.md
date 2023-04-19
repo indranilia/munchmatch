@@ -47,6 +47,10 @@ Add the container to Docker from docker-compose.yml:
     $ docker stack deploy -c docker-compose.yml tinder-for-food
 
 To see the app, visit http://localhost:5001
+To see the database, visit http://localhost:8080. Credentials:
+- Username: tinder_for_food_user
+- Password: tinder_for_food_password
+- Database: tinder_for_food
 
 When you are done, remove the containers from Docker:
 
