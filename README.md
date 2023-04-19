@@ -51,6 +51,7 @@ To see the database, visit http://localhost:8080. Credentials:
 - Username: tinder_for_food_user
 - Password: tinder_for_food_password
 - Database: tinder_for_food
+- System: PostgreSQL
 
 When you are done, remove the containers from Docker:
 
