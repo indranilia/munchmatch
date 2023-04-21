@@ -11,7 +11,6 @@ from app.routes.auth import bp
 from app.models.user import User
 from app.models.preferences import Preferences
 from app.extensions import db, info_logger, error_logger
-from app.integrations import emailSender
 from config import Config
 
 
@@ -70,7 +69,7 @@ def login():
 
 
 @bp.route("/register/", methods=["POST"])
-async def register():
+def register():
     """
     A route for registering a new user.
 
@@ -95,6 +94,7 @@ async def register():
             user = User(**newUserData)
             db.session.add(user)
             db.session.commit()
+            print(user)
 
             newPreferences = Preferences(
                 **{"uuid": str(uuid4()), "range": 2.5, "user_id": user.id}
@@ -138,134 +138,6 @@ def logout():
     response.set_cookie("user_uuid", expires=0)
 
     return response
-
-
-@bp.route("/verify/<string:uuid>")
-def verify(uuid):
-    """
-    A route for verifying a user's email.
-
-    Returns:
-        A response object indicating success.
-    """
-    try:
-        existingUser = User.query.filter_by(uuid=uuid).first()
-        existingUser.verified = True
-        info_logger.info(f"User verified with email: {existingUser.email}")
-        db.session.commit()
-
-        return redirect(url_for("auth.login", message="User Verified!"))
-    except Exception as error:
-        error_logger.error(f"Error on verifying account")
-        return redirect(url_for("auth.login", message="Verification failed"))
-
-
-@bp.route("/forgot-password/", methods=["POST", "GET"])
-async def forgotPassword():
-    """
-    A route for sending a forgot password email to a user.
-
-    GET requests will display the forgot password page, while POST requests
-    will attempt to send the email to the user.
-
-    Returns:
-        A rendered template containing the forgot password page (for GET requests),
-        or a response object indicating success or failure (for POST requests).
-    """
-    if request.method == "POST":
-        try:
-            userData = request.get_json()
-
-            existingUser = User.query.filter_by(email=userData["email"]).first()
-
-            info_logger.info(f"User forgot password with email: {existingUser.email}")
-
-            if not existingUser:
-                info_logger.info(f"User doesn't exist with email: {existingUser.email}")
-                return make_response(
-                    {"message": "User doesn't exist. Create your account first"}, 404
-                )
-            else:
-                try:
-                    info_logger.info(
-                        f"Forgot password message sent to email: {existingUser.email}"
-                    )
-                    # Sending verification email
-                    await emailSender.sendEmail(
-                        existingUser.email,
-                        "Reset your Kanban Board password",
-                        "forgotPassword",
-                        existingUser.name,
-                        f"{request.url_root}auth/reset-password/{existingUser.uuid}",
-                    )
-
-                    return make_response(
-                        {
-                            "message": f"Email sent to {existingUser.email}! Remember\
-                                      to check your spam folder. (You may need to mark as not\
-                                      a Span to access the link)"
-                        },
-                        200,
-                    )
-                except Exception as error:
-                    error_logger.error(
-                        f"Error on sending forgot password message to email: {existingUser.email}"
-                    )
-                    return make_response({"message": error}, 500)
-        except Exception as error:
-            error_logger.error(f"Error on forgot password")
-            return make_response({"message": error}, 500)
-    else:
-        if "message" in request.args:
-            info_logger.info(f"Forgot Password view rendered with message")
-            response_auth = request.args["message"]
-            return render_template("./auth/forgotPassword.html", message=response_auth)
-        else:
-            info_logger.info(f"Forgot Password view rendered without message")
-            return render_template("./auth/forgotPassword.html")
-
-
-@bp.route("/reset-password/<string:uuid>", methods=["GET", "PATCH"])
-def resetPassword(uuid):
-    """
-    A route for resetting a user's password.
-
-    GET requests will display the reset password page, while POST requests
-    will attempt to send the reset the user's password.
-
-    Returns:
-        A rendered template containing the reset password page (for GET requests),
-        or a response object indicating success or failure (for POST requests).
-    """
-    if request.method == "PATCH":
-        try:
-            userData = request.get_json()
-
-            existingUser = User.query.filter_by(uuid=uuid).first()
-
-            info_logger.info(f"User reset password with email: {existingUser.email}")
-
-            if not existingUser:
-                error_logger.error(f"User not foung with email: {existingUser.email}")
-                return make_response({"message": "User not found"}, 404)
-            else:
-                existingUser.password = generate_password_hash(userData["password"])
-                db.session.commit()
-                info_logger.info(
-                    f"User successully resey password with email: {existingUser.email}"
-                )
-                return make_response({"message": "Password reset!"}, 204)
-
-        except Exception as error:
-            return make_response({"message": error}, 500)
-    else:
-        if "message" in request.args:
-            info_logger.info(f"Reset Password view rendered with message")
-            response_auth = request.args["message"]
-            return render_template("./auth/resetPassword.html", message=response_auth)
-        else:
-            info_logger.info(f"Reset Password view rendered without message")
-            return render_template("./auth/resetPassword.html")
 
 
 @bp.errorhandler(404)
