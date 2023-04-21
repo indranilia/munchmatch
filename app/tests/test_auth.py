@@ -30,10 +30,10 @@ class TestConfig:
 
 
 class TestAuth(unittest.TestCase):
-    """Test suite for the Kanban authentication routes"""
+    """Test suite for the authentication routes"""
 
     def setUp(self):
-        """Set up Kanban app, database, and test client"""
+        """Set up the app, database, and test client"""
         self.flaskApp = create_app(TestConfig)
         self.app = self.flaskApp.test_client()
 
